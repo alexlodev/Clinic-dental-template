@@ -1,0 +1,71 @@
+.hero.parallax-bg {
+  height: 100px;
+  display: none;
+}
+.wrapper-datos {
+  background-image: url(../img/perfil.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.hero-perfil {
+  position: absolute;
+  top: 60px;
+}
+.tabla.datosPerfil {
+  padding-bottom: 60px;
+  position: absolute;
+  margin: 0 auto;;
+  top: 150px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.img-perfil {
+  border-radius: 50%;
+  max-width: 50%;
+  height: 100px;
+      top: -19px;
+    left: 0;
+    right: 0px;
+    margin: 0 auto;
+    position: absolute;
+}
+#Capa_1 {
+  display: none;
+}
+.contenedorForm{
+  text-align: center;
+  margin: 0 auto;
+}
+.contenedorForm h1 {
+  padding-top: 50px;
+  color: red
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+@media only screen and (min-width:865px) {
+  .hero.parallax-bg {
+    height: 300px;
+    background-image: url(../img/perfil.jpg);
+  }
+  .hero-perfil {
+    position: absolute;
+    top: 60px;
+  }
+  .tabla.datosPerfil {
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+
+  }
+  .img-perfil {
+    border-radius: 50%;
+    
+  }
+  #Capa_1 {
+    display: block;
+  }
+}
