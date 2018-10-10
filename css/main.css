@@ -206,15 +206,16 @@ p {
 }
 
         /**hero movil **/
-.nombre-sitio b {
+/*
+        .nombre-sitio b {
     font-weight:700;
-}
+}*/
 .nombre-sitio {
     margin: auto;
     padding-top: 30vh;
     color: #fff;
     text-align: center;
-    font-weight: lighter;
+    font-weight: 700;
 }
 
 .hero p {
