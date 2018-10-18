@@ -263,6 +263,7 @@ p {
     height:100vh;
     position: relative;
 
+
 }
 
 .parallax-bg {
@@ -287,9 +288,9 @@ p {
     height: 100vh;
     text-align: center;
     background-position: bottom center;
-    position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    position: relative;
  }
 .nombre-sitio {
     font-size: 3.5em;
@@ -741,7 +742,7 @@ p {
 	right:0;
 	bottom:0;
 	position:absolute;
-	transform:rotateY(180deg);
+	transforem:rotateY(180deg);
 	backface-visibility:hidden;
 	transition:all .4s linear;
 }
@@ -1016,19 +1017,90 @@ p {
 /*******************TRATAMIENTOS.HTML************************/
 .tratamientosContenedor {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-gap: 1fr;
+    grid-template-columns: auto;
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    
 }
+.verMas{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10%;
+}
+.verMas:hover {
+    background-color: #079bd9;
+    transition: ease 1s;
+}
+.ortodoncia.tratamientos {
+    background-image: url(../img/ortodoncia.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 20px;
+}
+.cirugiaDental.tratamientos {
+    background-image: url(../img/cirugia.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 37px 20px;
 
+}
+.periodoncia.tratamientos {
+    background-image: url(../img/periodoncia.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 37px 20px;
+}
+.endodoncia.tratamientos {
+    background-image: url(../img/endodoncia.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 37px 20px;
+}
+.odontologiaGeneral.tratamientos {
+    background-image: url(../img/general.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 37px 20px;
+}
+.implantesDentales.tratamientos {
+    background-image: url(../img/implante.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 37px 20px;
+}
+.tratamientos h1 {
+    color: #fff;
+}
 .imgTra {
     max-width: 50%;
     position: relative;
 }
-.texto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+
+.endodoncia {
+    padding-top: 40px;
+}
+@media only screen and (min-width:865px) {
+    .tratamientosContenedor {
+        display: grid;
+        grid-gap: 1fr;
+        grid-template-columns: 341px 341px 341px;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        max-width: 1024px;
+        
+    }
+    .tratamientos {
+        border-radius: 5%;
+    }
+    .ortodoncia.tratamientos{
+        padding: 20px;
+    }
+    .endodoncia.tratamientos{
+        padding: 20px;
+    }
 }
