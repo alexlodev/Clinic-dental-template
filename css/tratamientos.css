@@ -1,0 +1,515 @@
+/**DESING MOBILE FIRST **/
+
+        /***var color**/
+
+        :root {
+            --color-green: #bfcc30;
+            --color-blue: #079bd9;
+            --color-gray: #17263C;
+        }
+                /**gloables**/
+        
+        html {
+        
+            width: 100%;
+        
+        }
+        body {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            font-family: 'Poppins';
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        *, *:before, *:after {
+            box-sizing: border-box;
+        
+        }
+        h2, h3, h4 {
+            text-align: center;
+            font-family: 'Poppins';
+            font-weight: normal;
+            font-size: 1.3em;
+        }
+        
+        p {
+            font-family: 'Roboto';
+            font-size: 1em;
+            font-weight: lighter;
+        }      
+      
+      /**menu movil**/
+
+        .sm-wrapper{
+            margin-top: 100px;
+        }
+        
+        .sidemenu{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 998;
+            top: 0;
+            left: 0;
+            background-color: var(--color-gray);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .logo-menu {
+            position: absolute;
+            padding: 10px 0 0 30px;
+            top: 20px;
+            max-width: 70%;
+            cursor: pointer;
+        }
+        .sidemenu a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Varela+Round', sans-serif;
+            color: #ffffff;
+            display: block;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .sidemenu a:last-child {
+            background-color: #bfcc30;
+            border-radius: 30px;
+            text-align: center;
+            padding: 10px 10px;
+            margin: 0 auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            max-width: 400px;
+        }
+        .sidemenu a:last-child:hover {
+            padding-left: 0px;
+            padding-right: 0px;
+            transform: scale(1.05);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        
+        }
+        .sidemenu .close{
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 95px;
+            margin-left: 50px;
+        }
+        
+        .sm-wrapper a:hover:after{
+            width: 10%;
+        }
+        
+        .sm-wrapper a:hover{
+            padding-left: 64px;
+            transition: 0.35s ease-in-out;
+        }
+        .icon-menu {
+          font-size: 50px;
+          text-align: left;
+          cursor: pointer;
+          color: #079bd9;
+          margin: 0;
+          padding: 5px 0 0 10px;
+          width: 90px;
+          height: 90px;
+          background-color: #fff;
+          border-bottom-right-radius: 100%;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+          position: fixed;
+          z-index: 997;
+        
+        }
+        @media only screen and (min-width:865px) {
+          .icon-menu {
+            display: none;
+          }
+        }
+                /**menu escritorio**/
+        
+        @media only screen and (min-width:865px) {
+            .barra {
+                width: 100%;
+                background-color: transparent;
+                display: inline-block;
+                height: 100px;
+                position: fixed;
+                z-index: 998;
+                transition: all .3s ease;
+        
+            }
+            .barra.white {
+                background-color: #fff;
+                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+                transition: 0.2s padding;
+            }
+            .barra.white nav a {
+                color: #000;
+            }
+            .barra nav a {
+                color: #fff;
+            }
+            .barra nav a:last-child {
+                background-color: transparent;
+                border: 2px solid #fff;
+                padding: 11px 35px;
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                text-decoration: none;
+                border-radius: 30px;
+            }
+            .barra nav a:last-child:hover {
+                transition: 0.5s ease;
+                border: 2px solid var(--color-blue);
+                background-color: var(--color-blue);
+        
+            }
+            .barra.white nav a:last-child {
+                transition: 0.5s ease;
+                border: 2px solid var(--color-blue);
+                background-color: var(--color-blue);
+            }
+            .barra.white nav a:last-child:hover {
+                box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+                transform: scale(1.01);
+                transition: 0.5s;
+            }
+            .navbar-logo {
+                max-width: 200px;
+                margin: 20px 0;
+            }
+            .logo {
+                display: none;
+                max-width: 100%;
+            }
+            .menu {
+                float: right;
+                padding: 30px 0;
+                margin: 0 auto;
+            }
+            .menu a {
+                display: inline-block;
+                margin: 0 10px;
+                text-decoration: none;
+                font-family: 'Roboto';
+            }
+        }
+        @media only screen and (max-width:865px) {
+            .barra {
+                display: none;
+            }
+        }
+        
+
+    /****hero movil ****/
+/*
+        .nombre-sitio b {
+    font-weight:700;
+}*/
+.nombre-sitio {
+    margin: auto;
+    padding-top: 35%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.hero p {
+    text-align: center;
+    margin: 15px;
+    color: #fff;
+    font-size: 1.2em;
+}
+.button.header-1 {
+    background-color: transparent;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: all .3s ease;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px;
+    margin: 0 10px 0 0;
+    font-size: 1.2em;
+}
+.button {
+    background-color: var(--color-blue);
+    padding: 11px 35px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .3s ease;
+    border-radius: 30px;
+    font-size: 1.2em;
+    display: inline-block;
+
+}
+.button-header:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+.hero.parallax-bg {
+    background-image: url(../img/tratamientos.jpg), linear-gradient(red, blue);;
+    text-align: center;
+    background-size:cover;
+    height:500px;
+    position: relative;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: auto;
+
+
+}
+
+.parallax-bg {
+    background-repeat: no-repeat;
+    transition: initial;
+}
+#Capa_1 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+#right {
+    display: none;
+}
+        /**Hero desktop**/
+
+@media only screen and (min-width:865px) {
+.hero.parallax-bg {
+    background-image: #079bd9 url(../img/tratamientos.jpg), linear-gradient(red, blue);;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+ }
+.nombre-sitio {
+    font-size: 3.5em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    text-align: left;
+    font-size: 1.7em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.hero-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    display: block;
+}
+}
+  
+  
+  /**footer**/
+    .section-footer {
+        display: grid;
+        background-color: var(--color-gray);
+        padding-top: 40px;
+      }
+      .footer-conteiner {
+          display: grid;
+          grid-template-columns: auto;
+          margin: 0 auto;
+          grid-gap: 1fr;
+          text-align: left;
+          max-width: 90%;
+      }
+      .logo-footer img {
+          max-width: 65%;
+      }
+      .logo-footer i a {
+          font-size: 20px;
+          font-weight: lighter;
+          color:#fff;
+          text-decoration: none;
+          font-family: 'Roboto';
+      }
+      .logo-footer i {
+          color: #fff;
+          display: block;
+          font-size: 1.5em;
+          padding-top: 10px;
+          margin-left: 5px;
+      }
+      .about-footer h4 {
+          text-align: left;
+          color: #fff;
+          }
+      .about-footer p{
+          text-align: left;
+          color: #e1e1e1;
+      }
+      .contact-footer i {
+          font-size: 1.5em;
+          padding: 10px;
+          color: #fff;
+      }
+      .contact-footer h4 {
+          color: #fff;
+          text-align: left;
+      }
+      .contact-footer a {
+          text-decoration: none;
+          font-family: 'Roboto' ;
+          color: #e1e1e1;
+          font-weight: lighter;
+          font-size: 1em;
+      }
+      .contact-footer {
+          padding-bottom: 10px;
+      }
+      .made-footer {
+          background-color: rgb(18, 30, 48);
+          width: 100%;
+          text-align: center;
+      }
+      .made-footer p {
+          color: rgb(206, 206, 206);
+      }
+      .made-footer img {
+          max-width: 100px;
+          padding-top: 0;
+      }
+      @media only screen and (min-width:865px) {
+          .footer-conteiner {
+          display: grid;
+          grid-template-columns: 40% auto auto;
+          padding-top: 10px;
+          position: relative;
+          grid-gap: 40px;
+          }
+          .menu-footer {
+              max-width: 70%;
+          }
+          .made-footer {
+              width: 100%;
+          }
+          .contact-footer h4{
+          text-align: left;
+          padding-left: 10px;
+          }
+          .contact-footer {
+          text-align: left;
+          }
+          .contact-footer i {
+              font-size: 1.5em;
+              padding: 10px;
+          }
+          .contact-footer a {
+              text-decoration: none;
+              font-family: 'Roboto' ;
+              color: #e1e1e1;
+              font-weight: lighter;
+              font-size: 1em;
+          }
+          .about-footer h4 {
+              text-align: left;
+              color: #fff;
+          }
+          .about-footer p{
+              text-align: left;
+              color: #e1e1e1;
+          }
+          .logo-footer {
+              text-align: left;
+              padding: 20px;
+          }
+          .logo-footer i {
+              color: #fff;
+              display: block;
+              font-size: 1.5em;
+              padding-top: 10px;
+              margin-left: 5px;
+          }
+          .logo-footer i a {
+              font-size: 20px;
+              font-weight: lighter;
+              color:#fff;
+              text-decoration: none;
+              font-family: 'Roboto';
+          }
+      }
+
+
+/*******************TRATAMIENTOS.HTML************************/
+
+    .tratamientosContenedor {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fill, 400px);
+        justify-content: center;
+        margin: 0 auto;
+        padding: 80px 0;
+        width: 80%;
+        
+    }
+    .titulo {
+        color: var(--color-blue);
+        margin-left: 35px;
+    }
+    .textoTra {
+        color: #7b7b7b;
+        margin-left: 35px;
+        padding: 0;
+    }
+    .verMas {
+        margin-left: 35px;
+        background-color: var(--color-blue);
+        color: #fff;
+        padding: 10px 50px;
+        text-decoration: none;
+        border-radius: 30px;
+        margin-top: 10px;
+        
+    }
+    .cirugiaDental.tratamientos {
+        
+    }
+    .tratamientos {
+        background-color: #fff;
+        border-radius: 10px;
+        z-index: 101;
+        padding-bottom: 20px;
+        box-shadow: 0 0px 200px rgba(0,0,0,0.15);
+        transition: .3s ease-in-out;
+    }
+    .tratamientos:hover {
+        transform: scale(1.1)
+    }
+    .tratamientos img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .tratamientos:hover img{
+
+    }
+    
