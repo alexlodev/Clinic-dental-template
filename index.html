@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
 
 <head>
   <!--head-->
@@ -36,12 +36,12 @@
     <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
     <div class="sm-wrapper">
       <img class="logo-menu" src="img/logo.png" alt="">
-      <a href="#">Inicio</a>
-      <a href="galeria">Galeria</a>
-      <a href="#">Sobre nosotros</a>
-      <a href="tratamientos/">Tratamientos</a>
-      <a href="#">Contacto</a>
-      <a href="#" class="last">Realizar cita</a>
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre nosotros</a>
+      <a href="tratamientos.html">Tratamientos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="formulario.html" class="last">Realizar cita</a>
     </div>
   </div>
   <!-- Header -->
@@ -52,12 +52,12 @@
 
     <div class="barra">
       <nav class="menu clearfix">
-        <a href="#" class="hover">Inicio</a>
-        <a href="galeria" class="hover">Galeria</a>
-        <a href="#" class="hover">Sobre nosotros</a>
-        <a href="tratamientos/" class="hover">Tratamientos</a>
-        <a href="#" class="hover">Contacto</a>
-        <a href="#" class="last">Realizar cita</a>
+        <a href="index.html" class="hover">Inicio</a>
+        <a href="galeria.html" class="hover">Galeria</a>
+        <a href="sobre.html" class="hover">Sobre nosotros</a>
+        <a href="tratamientos.html" class="hover">Tratamientos</a>
+        <a href="contacto.html" class="hover">Contacto</a>
+        <a href="formulario.html" class="last">Realizar cita</a>
       </nav>
       <!-- logo menu-->
 
@@ -96,6 +96,11 @@
     </div>
 
   </header>
+   <!--loader-->
+   <div id="loader" class="transition">
+     <img src="img/loades.svg" alt="">
+     </div>
+
   <!-- Section "Especialidades" -->
 
   <section class="section-especialidades">
@@ -156,7 +161,7 @@
       <p data-aos="zoom-in" class="p-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, voluptates earum deserunt aliquam non eligendi
         aliquid dolorum molestias doloribus libero, dignissimos optio! Corrupti repellat recusandae accusantium modi vel
         dolore. Consequuntur?</p>
-      <img data-aos="zoom-in" class="img-about" src="img/about.jpg" alt="">
+      <img data-aos="zoom-in" class="img-about" src="img/unidad.jpg" alt="">
     </div>
   </section>
 
@@ -174,22 +179,33 @@
   <div class="doctors">
   <div class="swiper-container">
           <h2>Nuestros Doctores</h2>
+          <p class="description-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto deleniti praesentium suscipit sit asperiores ab dicta</p>
     <div  class="swiper-wrapper">
       <div data-aos="zoom-in" class="swiper-slide">
-          <img src="img/pic1.jpg" alt="">
+          <img src="img/doctores/pic1.jpg" alt="">
           <h3>Dr Victor Sanchez <span>
             <br> Cirugia Dental </br>
           </span></h3><br>
           <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam ipsa totam nemo accusantium, libero debitis laborum vitae</P>
       </div>
       <div data-aos="zoom-in"class="swiper-slide">
-          <img src="img/pic2.jpg" alt="">
-          <h3>Dr Lala Sanchez <span> <br> Cirugia Dental </br></span></h3>
+          <img src="img/doctores/pic2.jpg" alt="">
+          <h3>Dr. Oscar Soto Chacon <span> <br>Endodoncista</br></span></h3>
+          <P>Cirujano Dentista. Universidad Latina de Costa Rica 2003 <br>
+            Posgrado en endodoncia en la universidad latina de Costa Rica en el 2013<br>
+            Miembro de la academia de Endodoncia
+          </P>
+      </div>
+      <div data-aos="zoom-in"class="swiper-slide">
+          <img src="img/doctores/pic1.jpg" alt="">
+          <h3>Dr LASNLD slloo<span>
+            <br> Cirugia Dental </br> 
+          </span></h3>
           <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam ipsa totam nemo accusantium, libero debitis laborum vitae
           </P>
       </div>
       <div data-aos="zoom-in"class="swiper-slide">
-          <img src="img/pic3.jpg" alt="">
+          <img src="img/doctores/pic1.jpg" alt="">
           <h3>Dr LASNLD slloo<span>
             <br> Cirugia Dental </br>
           </span></h3>
@@ -197,7 +213,7 @@
           </P>
       </div>
       <div data-aos="zoom-in"class="swiper-slide">
-          <img src="img/pic4.jpg" alt="">
+          <img src="img/doctores/pic1.jpg" alt="">
           <h3>Dr LASNLD slloo<span>
             <br> Cirugia Dental </br>
           </span></h3>
@@ -205,15 +221,7 @@
           </P>
       </div>
       <div data-aos="zoom-in"class="swiper-slide">
-          <img src="img/pic5.jpg" alt="">
-          <h3>Dr LASNLD slloo<span>
-            <br> Cirugia Dental </br>
-          </span></h3>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam ipsa totam nemo accusantium, libero debitis laborum vitae
-          </P>
-      </div>
-      <div data-aos="zoom-in"class="swiper-slide">
-          <img src="img/pic6.jpg" alt="">
+          <img src="img/doctores/pic1.jpg" alt="">
           <h3>Dr LASNLD slloo<span>
             <br> Cirugia Dental </br>
           </span></h3>
@@ -306,7 +314,7 @@
     <span></span>
     <i class="fas fa-phone"></i><a href="#">2442-0214</a><br>
     <i class="fas fa-envelope"></i> <a href="mailto:clinicavisan@gmail.com">clinicavisan@gmail.com</a><br>
-    <i class="fas fa-map-marked"></i><a href="#">Alajuela, 175mts sur de la iglesia de la Agonia.</a>
+    <i class="fas fa-map-marked"></i><a href="#">Alajuela, 175mts sur de la iglesia de la Agonia.</a><br>
     <i class="far fa-clock"></i><a href="#">Lunes a Sabado de 8am a 6pm.</a>
   </div>
   </div>

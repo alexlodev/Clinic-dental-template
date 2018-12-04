@@ -39,6 +39,26 @@
             font-size: 1em;
             font-weight: lighter;
         }      
+        /*loader*/
+#loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+}
+
+#loader img {
+    width: 300px;
+    height: 300px;
+}
+
       
       /**menu movil**/
 
@@ -239,19 +259,7 @@
     margin: 0 10px 0 0;
     font-size: 1.2em;
 }
-.button {
-    background-color: var(--color-blue);
-    padding: 11px 35px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: all .3s ease;
-    border-radius: 30px;
-    font-size: 1.2em;
-    display: inline-block;
 
-}
 .button-header:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     transition: 0.5s;
@@ -263,9 +271,7 @@
     background-size:cover;
     height:500px;
     position: relative;
-    background-attachment: scroll;
-    background-position: top;
-    background-size: auto;
+    background-position: center;
 
 
 }
@@ -275,7 +281,7 @@
     transition: initial;
 }
 #Capa_1 {
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
     position: absolute;
@@ -386,6 +392,8 @@
           background-color: rgb(18, 30, 48);
           width: 100%;
           text-align: center;
+      padding-bottom: 5px;
+
       }
       .made-footer p {
           color: rgb(206, 206, 206);
@@ -497,9 +505,6 @@
         box-shadow: 0 0px 200px rgba(0,0,0,0.15);
         transition: .3s ease-in-out;
     }
-    .tratamientos:hover {
-        transform: scale(1.1)
-    }
     .tratamientos img {
         width: 100%;
         border-top-left-radius: 10px;
@@ -512,4 +517,8 @@
     .tratamientos:hover img{
 
     }
-    
+    @media only screen and (min-width:865px) {
+    .tratamientos:hover {
+        transform: scale(1.1)
+    }
+}

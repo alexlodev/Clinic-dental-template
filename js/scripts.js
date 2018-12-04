@@ -62,3 +62,13 @@ function closeSM() {
   document.getElementById("mySidemenu").style.width = "0";
   document.getElementById("pg-content").style.marginLeft = "0";
 };
+//loader// 
+
+const loader = document.getElementById('loader');
+const html = document.getElementById('html');
+
+window.addEventListener('load', ()=> {
+  loader.style.opacity = '0'
+  loader.style.zIndex = '-1'
+  html.style.overflowY = 'scroll'
+})

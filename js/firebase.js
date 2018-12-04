@@ -50,7 +50,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log("esta activo");
     aparece(user);
     console.log(user.emailVerified);
-    /*location.href = "perfil.html"*/
     var displayName = user.displayName;
     var email = user.email;
     var emailVerified = user.emailVerified;
