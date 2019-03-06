@@ -55,8 +55,8 @@
 }
 
 #loader img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
       
@@ -204,7 +204,7 @@
                 margin: 20px 0;
             }
             .logo {
-                display: none;
+              /*  display: none; */
                 max-width: 100%;
             }
             .menu {
@@ -233,7 +233,7 @@
 }*/
 .nombre-sitio {
     margin: auto;
-    padding-top: 35%;
+    padding-top: 24%;
     color: #fff;
     text-align: center;
     font-weight: 700;
@@ -295,7 +295,7 @@
 .hero.parallax-bg {
     background-image: #079bd9 url(../img/tratamientos.jpg), linear-gradient(red, blue);;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;

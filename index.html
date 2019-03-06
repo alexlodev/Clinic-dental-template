@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="html" lang="en">
+<html id="html" lang="es">
 
 <head>
   <!--head-->
@@ -63,8 +63,8 @@
 
       <div class="navbar-logo">
         <a href="index.html">
-          <img class="logo" src="img/logo.png" alt="logo">
-          <img class="logo-alt" src="img/logo-alt.svg" alt="logo">
+          <img  class="logo" src="img/logo.png" alt="logo">
+          <img id="logo" class="logo-alt" src="img/logo-alt.svg" alt="logo">
         </a>
       </div>
     </div>
@@ -73,14 +73,14 @@
     <div class="hero parallax-bg">
       <img id="right" src="img/svg/wave.svg" alt="">
       <div class="hero-content">
-        <h1 class="nombre-sitio ">Clínica dental,
+        <h1 data-aos="zoom-in" class="nombre-sitio ">Clínica dental,
           <b>con más de 30 años de
               experiencia.</b></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        <p data-aos="zoom-in" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           <br> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a href="#" class="button header-1">Leer mas</a>
-        <a href="#" class="button header">Realizar cita</a>
+        <a data-aos="zoom-in" href="#" class="button header-1">Leer mas</a>
+        <a data-aos="zoom-in" href="#" class="button header">Realizar cita</a>
       </div>
                 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 80.33">
                   <defs>
@@ -241,10 +241,8 @@
     <p class="login-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quasi, neque quibusdam repellendus ad blanditiis </p>
 <div class="login-wrap">
   <div class="login-html">
-    <input id="tab-1" type="radio" name="tab" class="sign-in">
-    <label for="tab-1" class="tab">Inicia Sesion</label>
     <input id="tab-2" type="radio" name="tab" class="sign-up"checked>
-    <label for="tab-2" class="tab">Registrate</label>
+    <label for="tab-2" class="tab">Realizar cita</label>
     <div class="login-form">
       <div class="sign-in-htm">
         <div class="group">
@@ -265,15 +263,11 @@
           <a href="#forgot">Olvidaste la contraseña?</a>
         </div>
       </div>
-      <!--Regristro-->
+      <!--Citas-->
       <div class="sign-up-htm">
         <div class="group">
           <label for="user" class="label">Nombre completo</label>
           <input id="name" type="text" class="input">
-        </div>
-        <div class="group">
-          <label for="pass" class="label">Contraseña</label>
-          <input id="pass" type="password" class="input" data-type="password">
         </div>
         <div class="group">
           <label for="num" class="label">Numero Telefonico</label>
@@ -281,14 +275,19 @@
         </div>
         <div class="group">
           <label for="email" class="label">Correo electronico</label>
-          <input id="email" type="text" class="input">
+          <input id="email" type="email" class="input">
         </div>
         <div class="group">
-          <button onclick="datosCompletos()" class="button"> Regristar </button>
-          <button id="facebook" type="button" class="button facebook"> facebook</button>
-          <button onclick="googleinn()" type="button" class="button google"> google</button>
+          <label for="date" class="label">Fecha de la cita</label>
+          <input id="date" type="date" class="input">
         </div>
-        <div class="hr"><label for="tab-1">Ya estas registrado?</a></div>
+        <div class="group">
+          <label for="cita" class="label">Detalle de al cita</label>
+          <textarea id="cita" type="text" class="input"></textarea>
+        </div>
+        <div class="group">
+          <button onclick="datosCompletos()" class="button"> Enviar </button>
+        </div>
       </div>
     </div>
   </div>

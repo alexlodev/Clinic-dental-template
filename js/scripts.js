@@ -66,9 +66,10 @@ function closeSM() {
 
 const loader = document.getElementById('loader');
 const html = document.getElementById('html');
-
+const logo = document.getElementById('logo');
 window.addEventListener('load', ()=> {
   loader.style.opacity = '0'
   loader.style.zIndex = '-1'
   html.style.overflowY = 'scroll'
+  logo.style.display = 'none'
 })
