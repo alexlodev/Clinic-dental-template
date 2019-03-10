@@ -188,20 +188,23 @@ p {
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
         border-radius: 30px;
+        transition: 0.5s;
+        
     }
     .barra nav a:last-child:hover {
-        transition: 0.5s ease;
         border: 2px solid var(--color-blue);
         background-color: var(--color-blue);
 
     }
     .barra.white nav a:last-child {
         transition: 0.5s ease;
+        font-weight: bold;
         border: 2px solid var(--color-blue);
         background-color: var(--color-blue);
+        box-shadow: 0 0px 20px rgb(72, 154, 249);
     }
     .barra.white nav a:last-child:hover {
-        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        box-shadow: 0 0px 30px rgb(72, 154, 249);
         transform: scale(1.01);
         transition: 0.5s;
     }
@@ -500,7 +503,7 @@ p {
 
 }
 .img-about {
-    max-width: 90%;
+    max-width: 50%;
     border-radius: 10px;
     box-shadow: 0 2px 70px rgba(0,0,0,0.26);
     margin: 0 auto;
@@ -513,7 +516,7 @@ p {
     margin: 0 auto;
     text-align: center;
     font-size: 1em;
-    line-height: 1;
+    line-height: 1.2;
 }
 .titile-about {
     color: var(--color-blue);
@@ -521,14 +524,6 @@ p {
     text-align: center;
     font-size: 1.8em;
     margin: 0;
-}
-.titile-about::after {
-    content: '';
-    background-image: url(../img/sep.png);
-    height: 11px;
-    width: 350px;
-    display: block;
-    margin: 0 auto;
 }
 
 @media only screen and (min-width:865px) {
@@ -569,7 +564,7 @@ p {
     box-shadow: 0 2px 70px rgba(0,0,0,0.26);
     margin: 0 auto;
     grid-area: img-about;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .p-about {
