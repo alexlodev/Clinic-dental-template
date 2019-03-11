@@ -73,3 +73,4 @@ window.addEventListener('load', ()=> {
   html.style.overflowY = 'scroll'
   logo.style.display = 'none'
 })
+//alert///
