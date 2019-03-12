@@ -680,7 +680,7 @@ p {
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 90%;
-    
+    padding: 50px 0;
 
 }
 .img-appoint {
@@ -695,7 +695,6 @@ p {
 
 .form-appoint {
     width: auto;
-    padding-top: 60px;
     margin: 20px;
 }
 .form-appoint h2{
@@ -713,6 +712,10 @@ p {
 .formContein {
     display: block;
 }
+input:hover, select:hover ,textarea:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0000003a;
+}
 input, select ,textarea {
     display: block;
     width: 350px;
@@ -728,9 +731,7 @@ input, select ,textarea {
     resize:  none;
     transition: 0.5s;
 }
-select:hover {
-    transform: scale(1.1)
-}
+
 option {
     transition: 0.5s;
     background: #d9ddf8;
@@ -749,6 +750,11 @@ textarea {
     transition: 0.5s ease;
     background-color: var(--color-blue);
     box-shadow: 0 0px 20px rgb(72, 154, 249);
+}
+@media only screen and (min-width:865px)  {
+    .form-appoint {
+        margin-left: 100px;
+    }
 }
     /**footer**/
 .section-footer {
