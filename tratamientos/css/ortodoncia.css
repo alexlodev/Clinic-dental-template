@@ -505,13 +505,17 @@ margin: 0 20px;
 .information h2 {
     text-align: left;
     margin: 0;
-    font-size: 2.3em;
+    font-size: 2em;
+    font-family: 'Montserrat';
     color: var(--color-green); 
     line-height: 1;
+    font-weight: 100;
 }
 .information p  {
-    font-size: 21px;
+    font-size: 1.05em;
     color: #5e6f7b;
+    line-height: 1.4;
+    font-family: 'Montserrat';
 }
 .information img {
     width: 100%;
@@ -529,7 +533,8 @@ margin: 0 20px;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
-    padding-top: 10px 
+    padding-top: 10px;
+    font-family: 'roboto' 
 }
 .contein-swiper p {
     color: #fff;
@@ -538,37 +543,37 @@ margin: 0 20px;
     font-size: 1em;
 }
 .swiper-slide.hyrax{
-    background-image: url(/tratamientos/img/hyrax.jpg);
+    background-image: url(../img/hyrax.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.swiper-slide.barra {
+    background-image: url(../img/barraTranspalatina.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.swiper-slide.arco {
+    background-image: url(../img/arco.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.swiper-slide.mascara{
+    background-image: url(../img/mascara.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.swiper-slide.trampa {
+    background-image: url(../img/trampa.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
 }
 .swiper-slide {
-    background-image: url(/tratamientos/img/hyrax.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-.swiper-slide {
-    background-image: url(/tratamientos/img/hyrax.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-.swiper-slide {
-    background-image: url(/tratamientos/img/hyrax.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-.swiper-slide {
-    background-image: url(/tratamientos/img/hyrax.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
-.swiper-slide {
-    background-image: url(/tratamientos/img/hyrax.jpg);
+    background-image: url(tratamientos/img/hyrax.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
