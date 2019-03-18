@@ -153,83 +153,84 @@
           }
         }
                 /**menu escritorio**/
+@media only screen and (min-width:865px) {
+    .barra {
+        width: 100%;
+        background-color: transparent;
+        display: inline-block;
+        height: 100px;
+        position: fixed;
+        z-index: 998;
+        transition: all .3s ease;
+
+    }
+    .barra.white {
+        background-color: #fff;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+        transition: 0.2s padding;
+    }
+    .barra.white nav a {
+        color: #000;
+    }
+    .barra nav a {
+        color: #fff;
+    }
+    .hover:hover {
+        color: #e9e9e9;
+        transition: ease-in-out;
+    }
+    .barra nav a:last-child {
+        background-color: transparent;
+        border: 2px solid #fff;
+        padding: 11px 35px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: 0.5s;
         
-        @media only screen and (min-width:865px) {
-            .barra {
-                width: 100%;
-                background-color: transparent;
-                display: inline-block;
-                height: 100px;
-                position: fixed;
-                z-index: 998;
-                transition: all .3s ease;
-        
-            }
-            .barra.white {
-                background-color: #fff;
-                box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
-                transition: 0.2s padding;
-            }
-            .barra.white nav a {
-                color: #000;
-            }
-            .barra nav a {
-                color: #fff;
-            }
-            .hover:hover {
-                color: #e9e9e9;
-                transition: ease-in-out;
-            }
-            .barra nav a:last-child {
-                background-color: transparent;
-                border: 2px solid #fff;
-                padding: 11px 35px;
-                color: #fff;
-                font-family: 'Roboto', sans-serif;
-                text-decoration: none;
-                border-radius: 30px;
-            }
-            .barra nav a:last-child:hover {
-                transition: 0.5s ease;
-                border: 2px solid var(--color-blue);
-                background-color: var(--color-blue);
-        
-            }
-            .barra.white nav a:last-child {
-                transition: 0.5s ease;
-                border: 2px solid var(--color-blue);
-                background-color: var(--color-blue);
-            }
-            .barra.white nav a:last-child:hover {
-                box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-                transform: scale(1.01);
-                transition: 0.5s;
-            }
-            .navbar-logo {
-                max-width: 200px;
-                margin: 20px 0;
-            }
-            .logo {
-              /*  display: none;*/
-                max-width: 100%;
-            }
-            .menu {
-                float: right;
-                padding: 30px 0;
-                margin: 0 auto;
-            }
-            .menu a {
-                display: inline-block;
-                margin: 0 10px;
-                text-decoration: none;
-                font-family: 'Roboto';
-            }
-        }
-        @media only screen and (max-width:865px) {
-            .barra {
-                display: none;
-            }
-        }
+    }
+    .barra nav a:last-child:hover {
+        border: 2px solid var(--color-blue);
+        background-color: var(--color-blue);
+
+    }
+    .barra.white nav a:last-child {
+        transition: 0.5s ease;
+        border: 2px solid var(--color-blue);
+        background-color: var(--color-blue);
+        box-shadow: 0 0px 20px rgb(72, 154, 249);
+    }
+    .barra.white nav a:last-child:hover {
+        box-shadow: 0 0px 30px rgb(72, 154, 249);
+        transform: scale(1.01);
+        transition: 0.5s;
+    }
+    .navbar-logo {
+        max-width: 200px;
+        margin: 20px 0;
+    }
+    .logo {
+      /*  display: none;*/
+        max-width: 100%;
+    }
+    .menu {
+        float: right;
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+    .menu a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        font-family: 'Roboto';
+    }
+}
+@media only screen and (max-width:865px) {
+    .barra {
+        display: none;
+    }
+}
         
                 /**hero movil **/
         /*
@@ -238,10 +239,10 @@
         }*/
         .nombre-sitio {
             margin: auto;
-            padding-top: 25vh;
+            padding-top: 2.5em;
             color: #fff;
             text-align: center;
-            font-weight: 700;
+            font-weight: 100;
         }
         
         .hero p {
@@ -283,7 +284,7 @@
             transform: scale(1.01);
         }
         .hero.parallax-bg {
-            background-image: url(https://www.odontologos.mx/noticias/noticias/interna-ortodoncia-ancianos.jpg);
+            background-image: url(../img/ortodoncia.jpg);
             text-align: center;
             background-position: center;
             background-size:cover;
@@ -310,7 +311,6 @@
         
         @media only screen and (min-width:865px) {
         .hero.parallax-bg {
-            background-image: url(http://clinalgiadental.com/wp-content/uploads/2016/07/fotomontaje-clinalgia-dental-ortodoncia-1.png);
             background-size: cover;
             height: 50vh;
             text-align: center;
@@ -323,6 +323,7 @@
             font-size: 3.5em;
             text-align: center;
             margin-bottom: 20px;
+            padding-top: 4em;
         }
         
         .hero p {
@@ -506,16 +507,16 @@ margin: 0 20px;
     text-align: left;
     margin: 0;
     font-size: 2em;
-    font-family: 'Montserrat';
+    font-family: 'Open Sans';
     color: var(--color-green); 
     line-height: 1;
-    font-weight: 100;
+    font-weight: bold;
 }
 .information p  {
     font-size: 1.05em;
     color: #5e6f7b;
     line-height: 1.4;
-    font-family: 'Montserrat';
+    font-family: 'Open Sans';
 }
 .information img {
     width: 100%;
@@ -548,7 +549,7 @@ margin: 0 20px;
     background-size: cover;
     position: relative;
 }
-.swiper-slide.barra {
+.swiper-slide.trans {
     background-image: url(../img/barraTranspalatina.jpg);
     background-position: center center;
     background-size: cover;
@@ -572,12 +573,7 @@ margin: 0 20px;
     background-size: cover;
     position: relative;
 }
-.swiper-slide {
-    background-image: url(tratamientos/img/hyrax.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-}
+
 .swiper-container {
     margin: 0 auto;
     position: relative;

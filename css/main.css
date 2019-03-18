@@ -244,7 +244,7 @@ p {
 .nombre-sitio {
     margin: auto;
     padding-top: 30vh;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-weight: 700;
 }
@@ -252,19 +252,19 @@ p {
 .hero p {
     text-align: center;
     margin: 15px;
-    color: #fff;
+    color: rgb(49, 49, 49);
     font-size: 1.2em;
 }
 .button.header-1 {
     background-color: transparent;
     padding: 10px 40px;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
     transition: all .3s ease;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #000000;
     border-radius: 30px;
     margin: 0 10px 0 0;
     font-size: 1.2em;
@@ -288,12 +288,13 @@ p {
     transform: scale(1.01);
 }
 .hero.parallax-bg {
-    background-image: url(../img/parallax.jpg);
+    background-image: url(../img/parallax2.jpg);
     text-align: center;
-    background-position: center;
+    background-position: center center;
     background-size:cover;
     height:100vh;
     position: relative;
+    width: auto;
 
 
 }
@@ -315,7 +316,7 @@ p {
 
 @media only screen and (min-width:865px) {
 .hero.parallax-bg {
-    background: #079bd9 url(../img/parallax.jpg);
+    background: #079bd9 url(../img/parallax2.jpg);
     background-size: cover;
     height: 100vh;
     text-align: center;
