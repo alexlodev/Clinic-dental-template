@@ -162,13 +162,13 @@
                 height: 100px;
                 position: fixed;
                 z-index: 998;
-                transition: all .3s ease;
+                transition: 1s padding;
         
             }
             .barra.white {
                 background-color: #fff;
                 box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
-                transition: 0.2s padding;
+                transition: 1s padding;
             }
             .barra.white nav a {
                 color: #000;
@@ -238,7 +238,7 @@
         }*/
         .nombre-sitio {
             margin: auto;
-            padding-top: 30vh;
+            padding-top: 10vh;
             color: #fff;
             text-align: center;
             font-weight: 700;
@@ -283,10 +283,11 @@
             transform: scale(1.01);
         }
         .hero.parallax-bg {
+            background-image: url(/img/appointment.jpg);
             text-align: center;
             background-position: center;
             background-size:cover;
-            height:100vh;
+            height:30vh;
             position: relative;
         
         
@@ -302,7 +303,7 @@
             transition: initial;
         }
         #Capa_1 {
-            bottom: 0;
+            bottom: -2px;
             left: 0;
             right: 0;
             position: absolute;
@@ -316,7 +317,7 @@
         @media only screen and (min-width:865px) {
         .hero.parallax-bg {
             background-size: cover;
-            height: 100vh;
+            height: 80vh;
             text-align: center;
             background-position: bottom center;
             background-attachment: fixed;
@@ -328,6 +329,7 @@
             font-size: 3.5em;
             text-align: left;
             margin-bottom: 20px;
+            padding-top: 20vh;
         }
         
         .hero p {
@@ -349,7 +351,87 @@
             display: block;
         }
         }
+        .appointment-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 90%;
+            padding: 50px 0;
         
+        }
+        .img-appoint {
+            width: 40em;
+        }
+        .img-appoint h2 {
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            color: #8e92ad;
+        }
+        
+        .form-appoint {
+            width: auto;
+        }
+        .form-appoint h2{
+            text-align: left;
+            font-size: 35px;
+            line-height: 0;
+            color: #707070;
+        }
+        .form-appoint h3 {
+            text-align: left;
+            line-height: 0;
+            color: #707070;
+        }
+        
+        .formContein {
+            display: block;
+        }
+        input:hover, select:hover ,textarea:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #0000003a;
+        }
+        input, select ,textarea {
+            display: block;
+            width: 350px;
+            margin: 0 auto;
+            height: 60px;
+            margin: 20px 0;
+            padding: 10px;
+            outline: none;
+            overflow: hidden;
+            border: none;
+            border-radius: 20px;
+            background: #e6e9fd;
+            resize:  none;
+            transition: 0.5s;
+        }
+        
+        option {
+            transition: 0.5s;
+            background: #d9ddf8;
+        }
+        textarea {
+            height: 100px;
+            background: #d9ddf8;
+        }
+        .buttomForm {
+            border-radius: 40px;
+            width: 120px;
+            height: 50px;
+            float: right;
+            color: #fff;
+            margin: 0;
+            transition: 0.5s ease;
+            background-color: var(--color-blue);
+            box-shadow: 0 0px 20px rgb(72, 154, 249);
+        }
+        @media only screen and (min-width:865px)  {
+            .form-appoint {
+                margin-left: 100px;
+            }
+        } 
     /**footer**/
 .section-footer {
     display: grid;

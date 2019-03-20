@@ -62,7 +62,14 @@
       </div>
     </div>
     <!-- Hero  -->
-
+    <div class="hero parallax-bg">
+      <img id="right" src="img/svg/wave.svg" alt="">
+      <div class="hero-content">
+        <h1 class="nombre-sitio "> Horarios de atencion.</h1>
+        <p> Lunes a Viernes 8.00-18.00</p> <br>
+        <p> Lunes a Viernes 8.00-18.00</p> <br>
+        <p> Lunes a Viernes 8.00-18.00</p> <br>
+      </div>
                 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 80.33">
                   <defs>
                     <style>
@@ -76,28 +83,43 @@
                 </svg>
     </div>
 
-
   </header>
    <!--loader-->
    <div id="loader" class="transition">
      <img src="img/loades.svg" alt="">
      </div>
-<div class="contact">
-<form class="wrapperForm" action="">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <input type="text">
-  <button type="submit"></button>
-</form>
-</div>
+     <div class="appointment-wrapper">
 
-     <div class="formulario">
-       <div class="formWrapper">
-         <form action=""></form>
-       </div>
-     </div>
+      <div data-aos="fade-right" class="img-appoint">
+          <h2>Llámanos o déjanos tus datos en el siguiente formulario y nos pondremos en contacto contigo lo antes posible</h2>
+          <img src="img/citas.svg" alt="">
+          <p>* La cita sera confirmada en un plazo de 24h via correo electronico </p>
+          <p>* Para emergencias favor llamar al 2442 0214</p>
+      </div>
+      <div data-aos="fade-left" class="form-appoint">
+        <h2>Realizar cita</h2>
+        <form class="formContein" action="">
+          
+          <input type="text" required class="nameForm" placeholder="*Nombre" >
+          <input type="number" required class="numberForm" placeholder="*Numero" >
+          <input type="email" required class="emailForm" placeholder="*Correo electronico" >
+          <h3>Fecha y hora de la cita:</h3>
+          <input type="date" required class="dateForm" value="2019-05-20" placeholder="*Fecha de la cita" >
+          <input type="time" value="08:00" min="8:00" max="18:00"  required>
+          <h3>Motivo de la cita:</h3>
+          <select required name="" id="">
+            <option value="Control de ortodoncia">Control de ortodoncia</option>
+            <option value="Valoracion Dental">Valoracion Dental</option>
+            <option value="Odontologia general">Odontologia general</option>
+            <option value="Cita de seguimiento dental">Cita de seguimiento dental</option>
+          </select>
+          <textarea class="description" placeholder="Detalle(opcional)"></textarea>
+          <input type="submit" id="buttomForm" class="buttomForm" value="Enviar">
+    
+    
+        </form>
+      </div>
+      </div>
      <footer class="section-footer">
         <div class="footer-conteiner">
           <div class="logo-footer">

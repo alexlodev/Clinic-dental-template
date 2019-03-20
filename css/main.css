@@ -80,12 +80,14 @@ p {
     transition: 0.5s;
     padding-top: 60px;
 }
+
 .logo-menu {
     position: absolute;
     padding: 10px 0 0 30px;
     top: 20px;
     max-width: 70%;
     cursor: pointer;
+    border-radius: 10px;
 }
 .sidemenu a{
     padding: 8px 8px 8px 0px;
@@ -98,6 +100,7 @@ p {
     margin-bottom: 20px;
     transition: 0.3s;
     text-align: center;
+
 }
 .sidemenu a:last-child {
     background-color: #bfcc30;
@@ -242,29 +245,35 @@ p {
     font-weight:700;
 }*/
 .nombre-sitio {
-    margin: auto;
-    padding-top: 30vh;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 15vh;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-weight: inherit;
+    font-size: 3em;
+    margin-left: 20px;
+
 }
 
 .hero p {
-    text-align: center;
+    text-align: left;
     margin: 15px;
-    color: rgb(49, 49, 49);
-    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    margin-left: 20px;
+
+
 }
 .button.header-1 {
     background-color: transparent;
     padding: 10px 40px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
     transition: all .3s ease;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     margin: 0 10px 0 0;
     font-size: 1.2em;
@@ -288,7 +297,7 @@ p {
     transform: scale(1.01);
 }
 .hero.parallax-bg {
-    background-image: url(../img/parallax2.jpg);
+    background-image: url(../img/bg-movil.jpg);
     text-align: center;
     background-position: center center;
     background-size:cover;
@@ -329,6 +338,9 @@ p {
     font-size: 3.5em;
     text-align: left;
     margin-bottom: 20px;
+    margin-left: 0px;
+    color: #000;
+    padding-top: 25vh;
 }
 
 .hero p {
@@ -336,6 +348,11 @@ p {
     font-size: 1.7em;
     margin: 0;
     margin-bottom: 20px;
+    color: rgb(46, 46, 46)
+}
+.button.header-1 {
+    color: #000;
+    border: 1px solid #000;
 }
 .hero-content {
     max-width: 1300px;
