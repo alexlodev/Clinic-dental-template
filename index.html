@@ -223,20 +223,20 @@
     <h2>Realizar cita</h2>
     <form class="formContein" method="POST" data-netlify="true">
           
-      <input type="text" required class="nameForm" placeholder="*Nombre" >
-      <input type="number" required class="numberForm" placeholder="*Numero" >
-      <input type="email" required class="emailForm" placeholder="*Correo electronico" >
+      <input type="text" name="nombre" required class="nameForm" placeholder="*Nombre" >
+      <input type="number" name="numero" required class="numberForm" placeholder="*Numero" >
+      <input type="email" name="correo" required class="emailForm" placeholder="*Correo electronico" >
       <h3>Fecha y hora de la cita:</h3>
-      <input type="date" required class="dateForm" value="2019-05-20" placeholder="*Fecha de la cita" >
-      <input type="time" value="08:00" min="8:00" max="18:00"  required>
+      <input type="date" name="fecha de la cita" required class="dateForm" value="2019-05-20" placeholder="*Fecha de la cita" >
+      <input type="time" name="hora" value="08:00" min="8:00" max="18:00"  required>
       <h3>Motivo de la cita:</h3>
-      <select required name="" id="">
+      <select required name="procedimiento" id="">
         <option value="Control de ortodoncia">Control de ortodoncia</option>
         <option value="Valoracion Dental">Valoracion Dental</option>
         <option value="Odontologia general">Odontologia general</option>
         <option value="Cita de seguimiento dental">Cita de seguimiento dental</option>
       </select>
-      <textarea class="description" placeholder="Detalle(opcional)"></textarea>
+      <textarea name="detalle de la cita" class="description" placeholder="Detalle(opcional)"></textarea>
       <input type="submit" id="buttomForm" class="buttomForm" value="Enviar">
 
 
