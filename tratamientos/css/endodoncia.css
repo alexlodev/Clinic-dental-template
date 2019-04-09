@@ -524,87 +524,7 @@ li {
   position: relative;
   border-radius: 5px;
 }
-.hyrax {
-  position: absolute;
-}
-.contein-swiper {
-  background-color: #41414144;
-  bottom: 0;
-  position: absolute;
-}
-.contein-swiper h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 10px;
-  font-weight: normal;
-  font-family: "roboto";
-}
-.contein-swiper p {
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1em;
-}
-.swiper-slide.hyrax {
-  background-image: url(../img/hyrax.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trans {
-  background-image: url(../img/barraTranspalatina.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.arco {
-  background-image: url(../img/arco.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.mascara {
-  background-image: url(../img/mascara.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trampa {
-  background-image: url(../img/trampa.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.lingual {
-  background-image: url(../img/arco-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.hawley {
-  background-image: url(../img/hawley.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.retenedor {
-  background-image: url(../img/retenedor-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-container {
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 40px 0;
-  z-index: 1;
-  width: 100%;
-  height: 30em;
-  max-width: 1200px;
-}
+
 .asideLeft {
   display: block;
   text-align: left;
@@ -668,17 +588,5 @@ li {
     margin: 0 auto;
     width: 90vw;
     box-sizing: border-box;
-  }
-  .asideLeft {
-    display: block;
-    text-align: left;
-    grid-area: aside;
-    max-width: 300px;
-    min-width: 250px;
-  }
-  .swiper-container {
-    height: 30em;
-    width: 30em;
-    float: left;
   }
 }

@@ -38,7 +38,7 @@ h4 {
 p {
   font-family: "Roboto";
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: normal;
 }
 /*loader*/
 #loader {
@@ -465,12 +465,15 @@ p {
 .titleTra {
   font-size: 3em;
   color: var(--color-blue);
+  font-weight: inherit;
 }
 .text {
   text-align: center;
-  color: var(--color-gray);
-  width: 600px;
+  color: #5e6f7b;
   margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: inherit;
+  font-family: "Poppins";
 }
 .tratamientosContenedor {
   display: grid;
@@ -480,6 +483,7 @@ p {
   margin: 0 auto;
   padding: 80px 0;
   width: 80%;
+  transition: 0.3s ease-in-out;
 }
 .titulo {
   color: var(--color-blue);
@@ -499,6 +503,11 @@ p {
   text-decoration: none;
   border-radius: 30px;
   margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+.verMas:hover {
+  box-shadow: 0px 5px 10px rgba(82, 82, 82, 0.315);
+  background-color: var(--color-green);
 }
 
 .tratamientos {
@@ -506,8 +515,7 @@ p {
   border-radius: 10px;
   z-index: 101;
   padding-bottom: 20px;
-  box-shadow: 0 0px 200px rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease-in-out;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.055);
 }
 .tratamientos img {
   width: 100%;
@@ -516,12 +524,4 @@ p {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.tratamientos:hover img {
-}
-@media only screen and (min-width: 865px) {
-  .tratamientos:hover {
-    transform: scale(1.1);
-  }
 }

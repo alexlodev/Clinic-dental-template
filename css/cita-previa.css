@@ -152,21 +152,22 @@ p {
   }
 }
 /**menu escritorio**/
+
 @media only screen and (min-width: 865px) {
   .barra {
     width: 100%;
     background-color: transparent;
     display: inline-block;
-    height: 78px;
+    height: 100px;
     position: fixed;
     z-index: 998;
-    transition: all 0.3s ease;
+    transition: 1s padding;
   }
   .barra.white {
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
       0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    transition: 0.2s padding;
+    transition: 1s padding;
   }
   .barra.white nav a {
     color: #000;
@@ -186,9 +187,9 @@ p {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     border-radius: 30px;
-    transition: 0.5s;
   }
   .barra nav a:last-child:hover {
+    transition: 0.5s ease;
     border: 2px solid var(--color-blue);
     background-color: var(--color-blue);
   }
@@ -196,16 +197,15 @@ p {
     transition: 0.5s ease;
     border: 2px solid var(--color-blue);
     background-color: var(--color-blue);
-    box-shadow: 0 0px 20px rgb(72, 154, 249);
   }
   .barra.white nav a:last-child:hover {
-    box-shadow: 0 0px 30px rgb(72, 154, 249);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     transform: scale(1.01);
     transition: 0.5s;
   }
   .navbar-logo {
     max-width: 200px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   .logo {
     /*  display: none;*/
@@ -213,7 +213,7 @@ p {
   }
   .menu {
     float: right;
-    padding: 17px 0;
+    padding: 30px 0;
     margin: 0 auto;
   }
   .menu a {
@@ -231,15 +231,15 @@ p {
 
 /**hero movil **/
 /*
-                        .nombre-sitio b {
-                    font-weight:700;
-                }*/
+                  .nombre-sitio b {
+              font-weight:700;
+          }*/
 .nombre-sitio {
   margin: auto;
-  padding-top: 2.5em;
+  padding-top: 10vh;
   color: #fff;
   text-align: center;
-  font-weight: 100;
+  font-weight: 700;
 }
 
 .hero p {
@@ -280,23 +280,29 @@ p {
   transform: scale(1.01);
 }
 .hero.parallax-bg {
-  background-image: url(../img/endodoncia-bg.jpg);
+  background-image: url(/img/appointment.jpg);
   text-align: center;
   background-position: center;
   background-size: cover;
   height: 30vh;
   position: relative;
 }
-
+.wrapperHero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 .parallax-bg {
   background-repeat: no-repeat;
   transition: initial;
 }
 #Capa_1 {
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   right: 0;
   position: absolute;
+  width: 100%;
 }
 #right {
   display: none;
@@ -312,12 +318,13 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
   }
   .nombre-sitio {
     font-size: 3.5em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
-    padding-top: 4em;
+    padding-top: 20vh;
   }
 
   .hero p {
@@ -333,10 +340,94 @@ p {
   }
   #right {
     position: absolute;
-    top: -15px;
+    top: 0;
     right: 0;
     width: 700px;
     display: block;
+  }
+}
+.appointment-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 90%;
+  padding: 50px 0;
+}
+.img-appoint {
+  width: 40em;
+}
+.img-appoint h2 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: #8e92ad;
+}
+
+.form-appoint {
+  width: auto;
+}
+.form-appoint h2 {
+  text-align: left;
+  font-size: 35px;
+  line-height: 0;
+  color: #707070;
+}
+.form-appoint h3 {
+  text-align: left;
+  line-height: 0;
+  color: #707070;
+}
+
+.formContein {
+  display: block;
+}
+input:hover,
+select:hover,
+textarea:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0000003a;
+}
+input,
+select,
+textarea {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  height: 60px;
+  margin: 20px 0;
+  padding: 10px;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  border-radius: 20px;
+  background: #e6e9fd;
+  resize: none;
+  transition: 0.5s;
+}
+
+option {
+  transition: 0.5s;
+  background: #d9ddf8;
+}
+textarea {
+  height: 100px;
+  background: #d9ddf8;
+}
+.buttomForm {
+  border-radius: 40px;
+  width: 120px;
+  height: 50px;
+  float: right;
+  color: #fff;
+  margin: 0;
+  transition: 0.5s ease;
+  background-color: var(--color-blue);
+  box-shadow: 0 0px 20px rgb(72, 154, 249);
+}
+@media only screen and (min-width: 865px) {
+  .form-appoint {
+    margin-left: 100px;
   }
 }
 /**footer**/
@@ -469,216 +560,5 @@ p {
     font-family: "Roboto";
   }
 }
-/*CIRUGIA.HTML*/
 
-.youtube {
-  max-width: 100%;
-  padding: 20px 0;
-}
-.grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto, auto;
-  grid-template-areas:
-    "information"
-    "aside";
-  grid-gap: 2rem;
-  margin: 0 auto;
-}
-.information {
-  grid-area: information;
-  justify-content: center;
-  min-width: 20%;
-  text-align: left;
-  margin: 0 auto;
-  margin: 0 20px;
-}
-.information h3 {
-  color: var(--color-blue);
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-.information h2 {
-  text-align: left;
-  margin: 0;
-  font-size: 2em;
-  font-family: "Open Sans";
-  color: var(--color-green);
-  line-height: 1;
-  font-weight: bold;
-}
-.information p {
-  font-size: 1.05em;
-  color: #5e6f7b;
-  line-height: 1.4;
-  font-family: "Open Sans";
-}
-ul,
-li {
-  font-family: "Open Sans";
-  color: #5e6f7b;
-}
-.information img {
-  width: 100%;
-  position: relative;
-  border-radius: 5px;
-}
-.hyrax {
-  position: absolute;
-}
-.contein-swiper {
-  background-color: #41414144;
-  bottom: 0;
-  position: absolute;
-}
-.contein-swiper h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 10px;
-  font-weight: normal;
-  font-family: "roboto";
-}
-.contein-swiper p {
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1em;
-}
-.swiper-slide.hyrax {
-  background-image: url(../img/hyrax.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trans {
-  background-image: url(../img/barraTranspalatina.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.arco {
-  background-image: url(../img/arco.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.mascara {
-  background-image: url(../img/mascara.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trampa {
-  background-image: url(../img/trampa.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.lingual {
-  background-image: url(../img/arco-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.hawley {
-  background-image: url(../img/hawley.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.retenedor {
-  background-image: url(../img/retenedor-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-container {
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 40px 0;
-  z-index: 1;
-  width: 100%;
-  height: 30em;
-  max-width: 1200px;
-}
-.asideLeft {
-  display: block;
-  text-align: left;
-  grid-area: aside;
-  max-width: 300px;
-  min-width: 250px;
-  margin: 0 auto;
-}
-.asideLeft li {
-  color: var(--color-blue);
-  margin-left: 25px;
-}
-.asideLeft li a {
-  text-decoration: none;
-  color: #000;
-  line-height: 2;
-  transition: 0.3s;
-}
-.asideLeft li a:hover {
-  color: var(--color-blue);
-}
-.wrapperOrto {
-  height: 900px;
-}
-.title {
-  font-weight: 900;
-  line-height: 2;
-}
-.titleOr {
-  font-weight: 900;
-}
-.horarios {
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 20px;
-  text-align: center;
-}
-.ayuda {
-  background-color: var(--color-blue);
-  border-radius: 20px;
-  padding: 40px;
-  margin-top: 20px;
-  text-align: center;
-  color: #fff;
-}
-.buttonHelp {
-  padding: 11px 35px;
-  color: #fff;
-  background-color: #bfcc30;
-  text-decoration: none;
-  border-radius: 30px;
-}
-@media only screen and (min-width: 865px) {
-  .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto, auto, auto;
-    grid-template-areas: "aside information";
-    grid-gap: 2rem;
-    margin: 0 auto;
-    width: 90vw;
-    box-sizing: border-box;
-  }
-  .asideLeft {
-    display: block;
-    text-align: left;
-    grid-area: aside;
-    max-width: 300px;
-    min-width: 250px;
-  }
-  .swiper-container {
-    height: 30em;
-    width: 30em;
-    float: left;
-  }
-}
+/******************CONTACTO.HTML*****************/
