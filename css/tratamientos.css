@@ -307,12 +307,12 @@ p {
     font-size: 3.5em;
     text-align: left;
     margin-bottom: 20px;
+    color: var(--color-green);
   }
 
   .hero p {
     text-align: left;
     font-size: 1.7em;
-    margin: 0;
     margin-bottom: 20px;
   }
   .hero-content {
@@ -466,6 +466,7 @@ p {
   font-size: 3em;
   color: var(--color-blue);
   font-weight: inherit;
+  margin-top: 0px;
 }
 .text {
   text-align: center;
