@@ -75,99 +75,65 @@
       <div class="hero parallax-bg">
         <img id="right" src="img/svg/wave.svg" alt="" />
         <div class="hero-content">
-          <h1 class="nombre-sitio ">Horarios de atencion.</h1>
-          <p>Lunes a Viernes 8.00-18.00</p>
-          <br />
-          <p>Lunes a Viernes 8.00-18.00</p>
-          <br />
-          <p>Lunes a Viernes 8.00-18.00</p>
-          <br />
+          <h1 class="nombre-sitio ">¿Qué podemos hacer por ti?</h1>
+          <p>Con gusto atenderemos todas sus dudas, sin compromiso.</p>
         </div>
-        <svg
-          id="Capa_1"
-          data-name="Capa 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1366 80.33"
-        >
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #fff;
-              }
-            </style>
-          </defs>
-          <title>wave</title>
-          <path
-            class="cls-1"
-            d="M-.5,33.5s362-75,683,0,683,0,683,0v47H-.5Z"
-            transform="translate(0.5 -0.17)"
-          />
-        </svg>
+        <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1453 156.43"><defs><style>.cls-1{fill:#4a54ff;stroke:#000;stroke-miterlimit:10;}.cls-2,.cls-3{fill:#fff;}.cls-2{opacity:0.6;}.cls-4{fill:#666;}</style></defs><title></title><path class="cls-1" d="M-518.5-489.5" transform="translate(0 -11.57)"/><path class="cls-2" d="M0,17S20,40,106,50,298,35,298,35,363-2,493,17,634,47,702,52s151,20,213,8,129-18,194-22,97-21,173-13,171,35,171,35V160H0Z" transform="translate(0 -11.57)"/><path class="cls-3" d="M0,39.78s114,52.6,288,18.63,169-39.45,389,0,404,0,404,0,86-21.92,217-18.63S1453,76,1453,76V168H0Z" transform="translate(0 -11.57)"/><path class="cls-4" d="M0-589" transform="translate(0 -11.57)"/></svg>  </header>
+
       </div>
     </header>
     <!--loader-->
     <div id="loader" class="transition">
       <img src="img/loades.svg" alt="" />
     </div>
-    <div class="appointment-wrapper">
-      <div data-aos="fade-right" class="img-appoint">
-        <h2>
-          Llámanos o déjanos tus datos en el siguiente formulario y nos
-          pondremos en contacto contigo lo antes posible
-        </h2>
-        <img src="img/citas.svg" alt="" />
-        <p>
-          * La cita sera confirmada en un plazo de 24h via correo electronico
-        </p>
-        <p>* Para emergencias favor llamar al 2442 0214</p>
-      </div>
-      <div data-aos="fade-left" class="form-appoint">
-        <h2>Realizar cita</h2>
-        <form class="formContein" action="">
-          <input type="text" required class="nameForm" placeholder="*Nombre" />
-          <input
-            type="number"
-            required
-            class="numberForm"
-            placeholder="*Numero"
-          />
-          <input
-            type="email"
-            required
-            class="emailForm"
-            placeholder="*Correo electronico"
-          />
-          <h3>Fecha y hora de la cita:</h3>
-          <input
-            type="date"
-            required
-            class="dateForm"
-            value="2019-05-20"
-            placeholder="*Fecha de la cita"
-          />
-          <input type="time" value="08:00" min="8:00" max="18:00" required />
-          <h3>Motivo de la cita:</h3>
-          <select required name="" id="">
-            <option value="Control de ortodoncia">Control de ortodoncia</option>
-            <option value="Valoracion Dental">Valoracion Dental</option>
-            <option value="Odontologia general">Odontologia general</option>
-            <option value="Cita de seguimiento dental"
-              >Cita de seguimiento dental</option
-            >
-          </select>
-          <textarea
-            class="description"
-            placeholder="Detalle(opcional)"
-          ></textarea>
-          <input
-            type="submit"
-            id="buttomForm"
-            class="buttomForm"
-            value="Enviar"
-          />
-        </form>
-      </div>
-    </div>
+ <!-- Citas section  -->
+ <div class="appointment-wrapper">
+
+  <div data-aos="fade-right" class="img-appoint">
+      <h2>Llámanos o déjanos tus datos en el siguiente formulario y nos pondremos en contacto contigo lo antes posible</h2>
+      <img src="img/citas.svg" alt="">
+      <p><b>* La cita sera confirmada en un plazo de 24h via correo electronico o llamada telefonica </b></p>
+      <p> <b> * Para emergencias favor llamar al 2442-0214 </b> </p>
+      <p class="horarios">
+        <b>* Horarios de atencion:  <br>
+        Lunes, Miercoles, Jueves, Viernes y Sabado de 8:00am a 6:00pm. <br />
+         Martes con horario extendido 1:30pm a 8:00pm.
+        </b>
+      </p>
+  </div>
+  <div data-aos="fade-left" class="form-appoint">
+    <h2>Realizar cita</h2>
+    <form class="formContein" method="POST" data-netlify="true">
+          
+      <input type="text" name="nombre" required class="input-data" placeholder="*Nombre" >
+      <input type="number" name="numero" required class="input-data" placeholder="*Número" >
+      <input type="email" name="correo" required class="input-data" placeholder="*Correo electrónico" >
+      <h3>Fecha y hora de la cita:</h3>
+      <input type="date" name="fecha de la cita" required class="input-data" value="2019-05-20" placeholder="*Fecha de la cita" >
+      <input class="input-data" type="time" name="hora" value="08:00" min="8:00" max="18:00"  required>
+      <h3>Motivo de la cita:</h3>
+      <select required name="procedimiento" id="">
+        <option value="Control de ortodoncia">Control de ortodoncia</option>
+        <option value="Valoracion Dental">Valoracion Dental</option>
+        <option value="Odontologia general">Odontologia general (Calzas, extracciones, etc) </option>
+        <option value="Cita de seguimiento dental">Cita de seguimiento dental</option>
+      </select>
+      <textarea name="detalle de la cita" class="description" placeholder="Detalle(opcional)"></textarea>
+      <h3>¿Eres paciente regular?</h3>
+      <input required id="checkbox1" type="radio" name="radio" value="Soy paciente"> <label for="checkbox1" class="checkbox-text">Soy paciente</label>
+      <input required id="checkbox2" type="radio" name="radio" value="NO soy paciente"> <label for="checkbox2" class="checkbox-text" >  Soy nuevo</label>
+      <input type="submit" id="buttomForm" class="buttomForm" value="Enviar">
+
+
+    </form>
+
+  </div>
+
+
+
+
+
+</div>
     <footer class="section-footer">
       <div class="footer-conteiner">
         <div class="logo-footer">

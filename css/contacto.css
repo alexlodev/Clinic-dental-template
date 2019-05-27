@@ -155,7 +155,7 @@ p {
     width: 100%;
     background-color: transparent;
     display: inline-block;
-    height: 100px;
+    height: 78px;
     position: fixed;
     z-index: 998;
     transition: all 0.3s ease;
@@ -203,7 +203,7 @@ p {
   }
   .navbar-logo {
     max-width: 200px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .logo {
     /*  display: none;*/
@@ -211,7 +211,7 @@ p {
   }
   .menu {
     float: right;
-    padding: 30px 0;
+    padding: 17px 0;
     margin: 0 auto;
   }
   .menu a {
@@ -296,7 +296,7 @@ p {
     background-image: #079bd9 url(../img/tratamientos.jpg),
       linear-gradient(red, blue);
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;
@@ -307,7 +307,7 @@ p {
     font-size: 3.5em;
     text-align: left;
     margin-bottom: 20px;
-    color: var(--color-green);
+    color: #fff;
   }
 
   .hero p {
@@ -323,7 +323,7 @@ p {
 
   #right {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 0;
     width: 700px;
     display: block;

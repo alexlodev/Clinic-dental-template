@@ -41,7 +41,8 @@ h4 {
 p {
   font-family: "Roboto";
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: normal;
+  color: #303030
 }
 /*loader*/
 #loader {
@@ -158,16 +159,16 @@ p {
     width: 100%;
     background-color: transparent;
     display: inline-block;
-    height: 100px;
+    height: 78px;
     position: fixed;
     z-index: 998;
-    transition: 1s padding;
+    transition: all 0.3s ease;
   }
   .barra.white {
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
       0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    transition: 1s padding;
+    transition: 0.2s padding;
   }
   .barra.white nav a {
     color: #000;
@@ -187,9 +188,9 @@ p {
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     border-radius: 30px;
+    transition: 0.5s;
   }
   .barra nav a:last-child:hover {
-    transition: 0.5s ease;
     border: 2px solid var(--color-blue);
     background-color: var(--color-blue);
   }
@@ -197,15 +198,16 @@ p {
     transition: 0.5s ease;
     border: 2px solid var(--color-blue);
     background-color: var(--color-blue);
+    box-shadow: 0 0px 20px rgb(72, 154, 249);
   }
   .barra.white nav a:last-child:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0px 30px rgb(72, 154, 249);
     transform: scale(1.01);
     transition: 0.5s;
   }
   .navbar-logo {
     max-width: 200px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .logo {
     /*  display: none;*/
@@ -213,7 +215,7 @@ p {
   }
   .menu {
     float: right;
-    padding: 30px 0;
+    padding: 17px 0;
     margin: 0 auto;
   }
   .menu a {
@@ -302,7 +304,6 @@ p {
   left: 0;
   right: 0;
   position: absolute;
-  width: 100%;
 }
 #right {
   display: none;
@@ -340,7 +341,7 @@ p {
   }
   #right {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 0;
     width: 700px;
     display: block;
@@ -352,7 +353,7 @@ p {
   margin: 0 auto;
   flex-wrap: wrap;
   max-width: 90%;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 .img-appoint {
   width: 40em;
@@ -366,6 +367,7 @@ p {
 
 .form-appoint {
   width: auto;
+  margin: 20px;
 }
 .form-appoint h2 {
   text-align: left;
@@ -382,20 +384,22 @@ p {
 .formContein {
   display: block;
 }
-input:hover,
+.input-data:hover,
+.buttomForm:hover,
 select:hover,
 textarea:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px #0000003a;
 }
-input,
+.input-data,
+.buttomForm,
 select,
 textarea {
   display: block;
   width: 350px;
   margin: 0 auto;
   height: 60px;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 10px;
   outline: none;
   overflow: hidden;
@@ -414,13 +418,23 @@ textarea {
   height: 100px;
   background: #d9ddf8;
 }
+#checkbox1,
+#checkbox2 {
+  width: 30px;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+.checkbox-text {
+  padding: 100px 0px;
+}
 .buttomForm {
   border-radius: 40px;
   width: 120px;
   height: 50px;
   float: right;
   color: #fff;
-  margin: 0;
+  margin: 30px 0px;
   transition: 0.5s ease;
   background-color: var(--color-blue);
   box-shadow: 0 0px 20px rgb(72, 154, 249);

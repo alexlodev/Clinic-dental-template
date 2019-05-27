@@ -155,7 +155,7 @@ p {
     width: 100%;
     background-color: transparent;
     display: inline-block;
-    height: 100px;
+    height: 78px;
     position: fixed;
     z-index: 998;
     transition: all 0.3s ease;
@@ -203,7 +203,7 @@ p {
   }
   .navbar-logo {
     max-width: 200px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .logo {
     /*  display: none;*/
@@ -211,7 +211,7 @@ p {
   }
   .menu {
     float: right;
-    padding: 30px 0;
+    padding: 17px 0;
     margin: 0 auto;
   }
   .menu a {
@@ -296,7 +296,7 @@ p {
     background-image: #079bd9 url(../img/tratamientos.jpg),
       linear-gradient(red, blue);
     background-size: cover;
-    height: 70vh;
+    height: 85vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;
@@ -306,14 +306,15 @@ p {
   .nombre-sitio {
     font-size: 3.5em;
     text-align: left;
-    margin-bottom: 20px;
-    color: var(--color-green);
+    margin-bottom: 0px;
+    color: #fff;
   }
 
   .hero p {
     text-align: left;
     font-size: 1.7em;
     margin-bottom: 20px;
+    margin-top: 0px;
   }
   .hero-content {
     max-width: 1300px;
@@ -323,7 +324,7 @@ p {
 
   #right {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 0;
     width: 700px;
     display: block;
@@ -463,16 +464,16 @@ p {
 
 /*******************TRATAMIENTOS.HTML************************/
 .titleTra {
-  font-size: 3em;
+  font-size: 36px;
   color: var(--color-blue);
   font-weight: inherit;
-  margin-top: 0px;
+  margin: 0px 0px 20px 0px;
 }
 .text {
   text-align: center;
   color: #5e6f7b;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 16px;
   font-weight: inherit;
   font-family: "Poppins";
 }
@@ -525,4 +526,12 @@ p {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
+}
+@media only screen and (min-width: 1024px) {
+  .titleTra {
+    font-size: 42px;
+  }
+  .text{
+    font-size: 18px;
+  }
 }
