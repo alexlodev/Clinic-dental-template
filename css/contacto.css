@@ -169,11 +169,14 @@ p {
   .barra.white nav a {
     color: #000;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .barra nav a {
     color: #fff;
   }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -296,7 +299,7 @@ p {
     background-image: #079bd9 url(../img/tratamientos.jpg),
       linear-gradient(red, blue);
     background-size: cover;
-    height: 90vh;
+    height: 85vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;
@@ -394,7 +397,8 @@ p {
   text-align: center;
   padding-bottom: 5px;
 }
-.made-footer p {
+.made-footer p,
+a {
   color: rgb(206, 206, 206);
 }
 .made-footer img {

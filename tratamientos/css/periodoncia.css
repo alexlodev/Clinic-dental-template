@@ -424,6 +424,10 @@ p {
   .made-footer {
     width: 100%;
   }
+  .made-footer p,
+  a {
+    color: rgb(206, 206, 206);
+  }
   .contact-footer h4 {
     text-align: left;
     padding-left: 10px;

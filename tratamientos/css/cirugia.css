@@ -403,7 +403,8 @@ p {
   text-align: center;
   padding-bottom: 5px;
 }
-.made-footer p {
+.made-footer p,
+a {
   color: rgb(206, 206, 206);
 }
 .made-footer img {

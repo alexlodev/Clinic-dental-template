@@ -42,7 +42,7 @@ p {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: normal;
-  color: #303030
+  color: #303030;
 }
 /*loader*/
 #loader {
@@ -173,11 +173,14 @@ p {
   .barra.white nav a {
     color: #000;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .barra nav a {
     color: #fff;
   }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -508,7 +511,8 @@ textarea {
   text-align: center;
   padding-bottom: 5px;
 }
-.made-footer p {
+.made-footer p,
+a {
   color: rgb(206, 206, 206);
 }
 .made-footer img {

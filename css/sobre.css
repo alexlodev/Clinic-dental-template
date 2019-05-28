@@ -39,7 +39,7 @@ h4 {
 p {
   font-family: "Roboto";
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: normal;
 }
 /**menu movil**/
 /*loader*/
@@ -155,7 +155,7 @@ p {
     width: 100%;
     background-color: transparent;
     display: inline-block;
-    height: 100px;
+    height: 78px;
     position: fixed;
     z-index: 998;
     transition: all 0.3s ease;
@@ -169,11 +169,14 @@ p {
   .barra.white nav a {
     color: #000;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .barra nav a {
     color: #fff;
   }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -203,7 +206,7 @@ p {
   }
   .navbar-logo {
     max-width: 200px;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .logo {
     /*  display: none;*/
@@ -211,7 +214,7 @@ p {
   }
   .menu {
     float: right;
-    padding: 30px 0;
+    padding: 17px 0;
     margin: 0 auto;
   }
   .menu a {
@@ -233,8 +236,8 @@ p {
         }*/
 .nombre-sitio {
   margin: auto;
-  padding-top: 20vh;
-  color: var(--color-green);
+  padding-top: 15vh;
+  color: #fff;
   text-align: center;
   font-weight: 700;
 }
@@ -304,7 +307,7 @@ p {
   .hero.parallax-bg {
     background: #079bd9 url(../img/parallax.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 85vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;
@@ -315,6 +318,7 @@ p {
     font-size: 3.5em;
     text-align: left;
     margin-bottom: 20px;
+    padding-top: 4em;
   }
 
   .hero p {
@@ -330,7 +334,7 @@ p {
   }
   #right {
     position: absolute;
-    top: 0;
+    top: -15px;
     right: 0;
     width: 700px;
     display: block;
@@ -400,7 +404,8 @@ p {
   text-align: center;
   padding-bottom: 5px;
 }
-.made-footer p {
+.made-footer p,
+a {
   color: rgb(206, 206, 206);
 }
 .made-footer img {
@@ -476,7 +481,6 @@ p {
   display: grid;
   grid-template-columns: auto, auto;
   padding-bottom: 100px;
-  padding-top: 100px;
   grid-gap: 20px;
   grid-template-areas:
     "titile-about"
@@ -507,7 +511,7 @@ p {
   grid-area: titile-about;
   text-align: left;
   font-size: 1.8em;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 865px) {
@@ -519,7 +523,6 @@ p {
   .about {
     display: grid;
     grid-template-columns: 600px, auto;
-    padding: 150px 0 150px 0;
     grid-template-areas:
       "titile-about img-about"
       "p-about img-about"
@@ -541,16 +544,18 @@ p {
   }
 
   .p-n {
-    color: #888;
+    color: #5e6f7b;
     grid-area: p-about;
     text-align: left;
     font-size: 1.3em;
     margin-left: 0;
+    font-family: "Open Sans";
   }
   .title-n {
     color: var(--color-blue);
     text-align: left;
     font-size: 50px;
+    margin: 0;
   }
   .title-q {
     color: var(--color-blue);
