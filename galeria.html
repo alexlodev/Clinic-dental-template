@@ -1,72 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
+  <head>
+    <!--head-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#079bd9" />
+    <title>Galeria</title>
 
-<head>
-  <!--head-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#079bd9">
-  <title>Clinica Visan</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/swiper.min.css">
-
-</head>
-<body>
-  <!-- Menu Mobile -->
-  <div class="icon-menu" onclick="openSM()">&#9776;</div>
-  <div id="mySidemenu" class="sidemenu">
-    <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
-    <div class="sm-wrapper">
-      <img class="logo-menu" src="img/logo.png" alt="">
-      <a href="#">Inicio</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="#">Sobre nosotros</a>
-      <a href="#">Tratamientos</a>
-      <a href="#">Contacto</a>
-      <a href="#" class="last">Realizar cita</a>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/tratamientos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+  </head>
+  <body>
+    <!-- Menu Mobile -->
+    <div class="icon-menu" onclick="openSM()">&#9776;</div>
+    <div id="mySidemenu" class="sidemenu">
+      <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+      <div class="sm-wrapper">
+        <img class="logo-menu" src="img/logo.png" alt="" />
+        <a href="/">Inicio</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="tratamientos.html">Tratamientos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="cita-previa.html" class="last">Realizar cita</a>
+      </div>
+      <h2>2442-0214</h2>
     </div>
-  </div>
-  <!-- Header -->
+    <!-- Header -->
 
+    <header class="header">
+      <!-- Barra menu -->
 
-  <header class="header">
-    <!-- Barra menu -->
+      <div class="barra">
+        <nav class="menu ">
+          <a href="/" class="hover">Inicio</a>
+          <a href="galeria.html" class="hover">Galeria</a>
+          <a href="sobre.html" class="hover">Sobre nosotros</a>
+          <a href="tratamientos.html" class="hover">Tratamientos</a>
+          <a href="contacto.html" class="hover">Contacto</a>
+          <a href="cita-previa.html" class="last">Realizar cita</a>
+        </nav>
+        <!-- logo menu-->
 
-    <div class="barra">
-      <nav class="menu clearfix">
-        <a href="#" class="hover">Inicio</a>
-        <a href="galeria.html" class="hover">Galeria</a>
-        <a href="#" class="hover">Sobre nosotros</a>
-        <a href="#" class="hover">Tratamientos</a>
-        <a href="#" class="hover">Contacto</a>
-        <a href="#" class="last">Realizar cita</a>
-      </nav>
-      <!-- logo menu-->
+        <div class="navbar-logo">
+          <a href="/">
+            <img class="logo" src="img/logo.png" alt="logo" />
+            <img id="logo" class="logo-alt" src="img/logo-alt.svg" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="hero parallax-bg">
+        <img id="right" src="img/svg/wave.svg" alt="" />
+        <div class="hero-content">
+          <h1 class="nombre-sitio ">
+            Vuelve a sonreír con nuestros tratamientos.
+          </h1>
+          <p>
+            Una ámplia gama de tratamientos para el bienestar de su salud
+            dental.
+          </p>
+        </div>
+        <svg
+          id="Capa_1"
+          data-name="Capa 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1453 156.43"
+        >
+          <defs>
+            <style>
+              .cls-1 {
+                fill: #4a54ff;
+                stroke: #000;
+                stroke-miterlimit: 10;
+              }
+              .cls-2,
+              .cls-3 {
+                fill: #fff;
+              }
+              .cls-2 {
+                opacity: 0.6;
+              }
+              .cls-4 {
+                fill: #666;
+              }
+            </style>
+          </defs>
+          <title></title>
+          <path
+            class="cls-1"
+            d="M-518.5-489.5"
+            transform="translate(0 -11.57)"
+          />
+          <path
+            class="cls-2"
+            d="M0,17S20,40,106,50,298,35,298,35,363-2,493,17,634,47,702,52s151,20,213,8,129-18,194-22,97-21,173-13,171,35,171,35V160H0Z"
+            transform="translate(0 -11.57)"
+          />
+          <path
+            class="cls-3"
+            d="M0,39.78s114,52.6,288,18.63,169-39.45,389,0,404,0,404,0,86-21.92,217-18.63S1453,76,1453,76V168H0Z"
+            transform="translate(0 -11.57)"
+          />
+          <path class="cls-4" d="M0-589" transform="translate(0 -11.57)" />
+        </svg>
+      </div>
+    </header>
+    <!--loader-->
+    <div id="loader" class="transition">
+      <img src="img/loades.svg" alt="" />
+    </div>
+    <h2 class="titleTra">Nuestros <b> tratamientos</b></h2>
+    <p class="text">
+      En la <b> Clínica Dental VISAN </b> ofrecemos a nuestros pacientes un
+      servicio dental excelente, <br />
+      ya que contamos con una alta gama de especialidades de la Odontología.
+      <br />
+      Además, cada uno de los profesionales que trabaja en nuestro equipo se
+      dedica a su <b> especialidad en exclusiva</b>, <br />
+      por lo que cuenta
+      <b> con mucha experiencia en los tratamientos que realiza.</b>
+    </p>
+    <div class="tratamientosContenedor">
+      <div data-aos="zoom-in" class="ortodoncia tratamientos">
+        <img class="imgTra" src="img/tratamientos/ortodoncia.jpg" alt="" />
+        <h1 class="titulo"><b> Ortodoncia </b>(Frenillos)</h1>
+        <p class="textoTra">
+          La Ortodoncia es una especialidad de la odontología que se encarga de
+          la corrección de los dientes y huesos posicionados incorrectamente
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/ortodoncia.html">Ver más</a>
+      </div>
+      <div data-aos="zoom-in" class="cirugiaDental tratamientos">
+        <img class="imgTra" src="img/tratamientos/cirugia.jpg" alt="" />
+        <h1 class="titulo"><b> Cirugia </b> Dental</h1>
+        <p class="textoTra">
+          Especialidad de la Odontología que trata del diagnóstico y tratamiento
+          quirúrgico de enfermedades, heridas y defectos de la boca y la
+          estructura dental.
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/cirugia.html">Ver más</a>
+      </div>
+      <div data-aos="zoom-in" class="periodoncia tratamientos">
+        <img class="imgTra" src="img/tratamientos/periodoncia.jpg" alt="" />
+        <h1 class="titulo"><b> Periodoncia </b></h1>
+        <p class="textoTra">
+          Prevención, diagnóstico y tratamiento de las enfermedades y
+          condiciones que afectan los tejidos que dan soporte a los dientes.
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/periodoncia.html">Ver más</a>
+      </div>
 
-      <div class="navbar-logo">
-        <a href="index.html">
-          <img class="logo" src="img/logo.png" alt="logo">
-          <img id="logo" class="logo-alt" src="img/logo-alt.svg" alt="logo">
-        </a>
+      <div data-aos="zoom-in" class="odontologiaGeneral tratamientos">
+        <img class="imgTra" src="img/tratamientos/general.jpg" alt="" />
+        <h1 class="titulo"><b> Odontologia </b> General</h1>
+        <p class="textoTra">
+          Odontología general consiste en tratamientos como: calzas, limpiezas,
+          diagnóstico, extracciones entre otras mas
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/odontologia.html">Ver más</a>
+      </div>
+      <div data-aos="zoom-in" class="endodoncia tratamientos">
+        <img class="imgTra" src="img/tratamientos/endodoncia.jpg" alt="" />
+        <h1 class="titulo"><b> Endodoncia</b> (Tratamiento de nervio)</h1>
+        <p class="textoTra">
+          Un Tratamiento de nervio o endodoncia consiste en una extirpación de
+          la pulpa dental afectada por caries, asi salvando la pieza dental
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/endodoncia.html">Ver más</a>
+      </div>
+      <div data-aos="zoom-in" class="implantesDentales tratamientos">
+        <img class="imgTra" src="img/tratamientos/implante.jpg" alt="" />
+        <h1 class="titulo"><b> Implantes </b> Dentales</h1>
+        <p class="textoTra">
+          Diseñado para sustituir la raíz y la corona dental faltante, fabricado
+          con materiales biocompatibles de alta calidad.
+        </p>
+        <br />
+        <a class="verMas" href="tratamientos/implantes.html">Ver más</a>
       </div>
     </div>
+    <footer class="section-footer">
+      <div class="footer-conteiner">
+        <div class="logo-footer">
+          <img src="img/logo.png" alt="" />
+          <i class="fab fa-facebook">
+            <a href="http://facebook.com/clinicavisan">
+              facebook.com/clinicavisan</a
+            ></i
+          >
+        </div>
+        <div class="about-footer">
+          <h4>Sobre nosotros</h4>
+          <p>
+            En la Clínica Dental del Dr. Victor Sánchez,<br />
+            disponemos de un quipo humano de profesionales con larga experiencia
+            <br />
+            para cuidar tu salud bucal o devolverte una sonrisa fabulosa.
+          </p>
+        </div>
+        <div class="contact-footer">
+          <h4>Contacto</h4>
+          <span></span>
+          <i class="fas fa-phone"></i><a href="/contacto.html">2442-0214</a
+          ><br />
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:clinicavisan@gmail.com">clinicavisan@gmail.com</a
+          ><br />
+          <i class="fas fa-map-marked"></i
+          ><a href="https://goo.gl/maps/1m7RYzmWKAK7WkKq7"
+            >Alajuela, 175mts sur de la iglesia de la Agonia.</a
+          ><br />
+          <i class="far fa-clock"></i
+          ><a href="/contacto.html">Lunes a Sabado de 8am a 6pm.</a>
+        </div>
+      </div>
+      <div class="made-footer">
+        <p>
+          &copy; Copyright 2019 Diseñado por
+          <a href="https://alex-lo.com">Alex Lo</a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+    <!-- Javascript  -->
 
-  <!-- Javascript  -->
+    <script src="js/scripts.js"></script>
+    <!---Google api map-->
 
-  <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdXH2vib4zWaB2r7n6rXaQ6Mv-SNVHpoA&callback=initMap"
+      async
+      defer
+    ></script>
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>
