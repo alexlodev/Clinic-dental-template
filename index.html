@@ -207,7 +207,7 @@
       <p><b>* La cita será confirmada en un plazo de 24h vía correo electronico o llamada telefonica </b></p>
       <p><b> * Para emergencias favor llamar al 2442-0214 </b></p>
   </div>
-  <div data-aos="fade-left" action="#" onsubmit="correct()" class="form-appoint">
+  <div data-aos="fade-left" action="/" onsubmit="correct()" class="form-appoint">
     <h2>Realizar cita </h2>
     <form class="formContein" method="POST" data-netlify="true" data-netlify-recaptcha="true">     
       <input type="text" name="nombre" required class="input-data" placeholder="*Nombre" >
@@ -258,12 +258,11 @@
   <!---------------------- END PAGE ------------------------->
   <!-- Jquery plugins  -->
 <script>
-const submit = document.getElementById("buttomForm");
 
-submit.addEventListener('click', function correct(){
+function correct(){
   swal ( "Oops" ,  "Something went wrong!" ,  "error" )
 
-})
+}
 
 </script>
   <script src="js/swiper.min.js" ></script>
