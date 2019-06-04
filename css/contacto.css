@@ -219,7 +219,7 @@ p {
   }
   .menu a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 7px;
     text-decoration: none;
     font-family: "Roboto";
   }
@@ -237,16 +237,13 @@ p {
 }*/
 .nombre-sitio {
   margin: auto;
-  padding-top: 4em;
-  padding-left: 60px;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
 .hero p {
-  text-align: left;
+  text-align: center;
   margin: 15px;
-  margin-left: 60px;
   color: #fff;
   font-size: 1.2em;
 }
@@ -274,8 +271,11 @@ p {
   background-image: url(../img/tratamientos.jpg), linear-gradient(red, blue);
   text-align: center;
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-position: center;
 }
 
@@ -308,20 +308,20 @@ p {
   }
   .nombre-sitio {
     font-size: 3.5em;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     color: #fff;
   }
 
   .hero p {
-    text-align: left;
+    text-align: center;
     font-size: 1.7em;
     margin-bottom: 20px;
   }
   .hero-content {
     max-width: 1300px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
   }
 
   #right {

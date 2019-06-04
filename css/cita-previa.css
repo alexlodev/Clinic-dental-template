@@ -223,7 +223,7 @@ p {
   }
   .menu a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 7px;
     text-decoration: none;
     font-family: "Roboto";
   }
@@ -241,7 +241,6 @@ p {
         }*/
 .nombre-sitio {
   margin: auto;
-  padding-top: 10vh;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -290,6 +289,9 @@ p {
   background-position: center;
   background-size: cover;
   height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 .wrapperHero {
@@ -328,7 +330,6 @@ p {
     font-size: 3.5em;
     text-align: left;
     margin-bottom: 20px;
-    padding-top: 20vh;
   }
 
   .hero p {
