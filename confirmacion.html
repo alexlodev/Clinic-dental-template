@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+
+    <title>Gracias por contactarnos</title>
+  </head>
+  <body>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        background-color: #e6eef0;
+        height: 100vh;
+      }
+      h1,
+      h3 {
+        font-family: "Poppins";
+        color: #080c40;
+      }
+      .title {
+        font-size: 10vw;
+        line-height: 1;
+        margin: 0 auto;
+        padding-top: 30%;
+        text-align: center;
+        grid-area: title;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        text-align: center;
+        line-height: 1;
+        font-size: 6vw;
+        margin: 0px;
+        margin-bottom: 30px;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 800px;
+      }
+      .button {
+        text-decoration: none;
+        text-align: center;
+        font-family: "Poppins";
+        color: #fff;
+        background-color: #00aeef;
+        width: 200px;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 0 auto;
+        box-shadow: 0px 8px 15px #56d1ff;
+      }
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      img {
+        width: 70%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 40px;
+      }
+      .logo {
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        width: 50vw;
+        max-width: 300px;
+      }
+      @media only screen and (min-width: 780px) {
+        .wrapper {
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+        .title {
+          font-size: 5em;
+          text-align: left;
+        }
+        .subtitle {
+          font-size: 2.5em;
+          text-align: left;
+        }
+        .button {
+          margin: 0px;
+        }
+        img {
+          padding-top: 15%;
+        }
+      }
+    </style>
+    <div class="wrapper">
+      <div class="content">
+        <h1 class="title">Gracias por contactarnos.</h1>
+        <h3 class="subtitle">Pronto le estaremos confirmando la cita.</h3>
+        <a class="button" href="/">Volver al inicio</a>
+      </div>
+
+      <img class="" src="/img/confirmacion.gif" alt="teeh" />
+    </div>
+    <footer>
+      <img class="logo" src="/img/logo-alt.svg" alt="" />
+    </footer>
+  </body>
+</html>
