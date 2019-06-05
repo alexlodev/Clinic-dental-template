@@ -67,7 +67,7 @@ p {
 }
 
 .sidemenu {
-  height: 100%;
+  height: 120%;
   width: 0;
   position: fixed;
   z-index: 998;
@@ -119,7 +119,10 @@ p {
   font-size: 95px;
   margin-left: 50px;
 }
-
+.sidemenu h2 {
+  font-size: 30px;
+  color: #fff;
+}
 .sm-wrapper a:hover:after {
   width: 10%;
 }
@@ -203,6 +206,7 @@ p {
     box-shadow: 0 0px 30px rgb(72, 154, 249);
     transform: scale(1.01);
     transition: 0.5s;
+    color: #fff;
   }
   .navbar-logo {
     max-width: 200px;

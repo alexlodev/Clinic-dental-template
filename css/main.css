@@ -70,7 +70,7 @@ p {
 }
 
 .sidemenu {
-  height: 100%;
+  height: 120%;
   width: 0;
   position: fixed;
   z-index: 998;
@@ -210,6 +210,7 @@ p {
   .barra.white nav a:last-child:hover {
     box-shadow: 0 0px 30px rgb(72, 154, 249);
     transform: scale(1.01);
+    color: #fff;
     transition: 0.5s;
   }
   .navbar-logo {
@@ -285,9 +286,7 @@ p {
   font-size: 1.2em;
   display: inline-block;
 }
-.button.header {
-  box-shadow: 0 2px 15px var(--color-blue);
-}
+
 .button.header:hover {
   transition: 1s;
   transform: scale(1.2);
@@ -352,6 +351,9 @@ p {
   .button.header-1 {
     color: #000;
     border: 1px solid #000;
+  }
+  .button.header {
+    box-shadow: 0 2px 15px var(--color-blue);
   }
   .hero-content {
     max-width: 1300px;

@@ -10,10 +10,8 @@
 /**gloables**/
 
 html {
-  overflow: hidden;
   width: 100%;
 }
-
 body {
   margin: 0;
   border: 0;
@@ -21,7 +19,6 @@ body {
   font-family: "Poppins";
   width: 100%;
   overflow-x: hidden;
-  /*transition: 3s ease-in-out;*/
 }
 
 *,
@@ -34,14 +31,14 @@ h3,
 h4 {
   text-align: center;
   font-family: "Poppins";
-  font-weight: normal;
+  font-weight: 100;
   font-size: 1.3em;
 }
 
 p {
   font-family: "Roboto";
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: normal;
 }
 /*loader*/
 #loader {
@@ -81,6 +78,10 @@ p {
   transition: 0.5s;
   padding-top: 60px;
 }
+.sidemenu h2 {
+  font-size: 30px;
+  color: #fff;
+}
 .logo-menu {
   position: absolute;
   padding: 10px 0 0 30px;
@@ -89,7 +90,7 @@ p {
   cursor: pointer;
 }
 .sidemenu a {
-  padding: 8px 8px 8px 0px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   font-family: "Varela+Round", sans-serif;
@@ -152,6 +153,7 @@ p {
   }
 }
 /**menu escritorio**/
+
 @media only screen and (min-width: 865px) {
   .barra {
     width: 100%;
@@ -174,8 +176,11 @@ p {
   .barra nav a {
     color: #fff;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -230,16 +235,15 @@ p {
   }
 }
 
-/**hero movil **/
+/****hero movil ****/
 /*
-                .nombre-sitio b {
-            font-weight:700;
-        }*/
+          .nombre-sitio b {
+      font-weight:700;
+  }*/
 .nombre-sitio {
   margin: auto;
   color: #fff;
   text-align: center;
-  font-weight: 100;
 }
 
 .hero p {
@@ -262,33 +266,22 @@ p {
   margin: 0 10px 0 0;
   font-size: 1.2em;
 }
-.button {
-  background-color: var(--color-blue);
-  padding: 11px 35px;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  margin-top: 10px;
-  transition: all 0.3s ease;
-  border-radius: 30px;
-  font-size: 1.2em;
-  display: inline-block;
-}
+
 .button-header:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   transition: 0.5s;
   transform: scale(1.01);
 }
 .hero.parallax-bg {
-  background-image: url(../img/ortodoncia.jpg);
+  background-image: url(../img/instalaciones/recepcion2.jpg);
   text-align: center;
-  background-position: center;
   background-size: cover;
-  height: 30vh;
+  height: 50vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
 }
 
 .parallax-bg {
@@ -296,7 +289,7 @@ p {
   transition: initial;
 }
 #Capa_1 {
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   position: absolute;
@@ -308,8 +301,9 @@ p {
 
 @media only screen and (min-width: 865px) {
   .hero.parallax-bg {
+    background-image: #079bd9 url(../img/instalaciones/recepcion1.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 85vh;
     text-align: center;
     background-position: bottom center;
     background-attachment: fixed;
@@ -319,20 +313,22 @@ p {
   .nombre-sitio {
     font-size: 3.5em;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    color: #fff;
   }
 
   .hero p {
-    text-align: left;
+    text-align: center;
     font-size: 1.7em;
-    margin: 0;
     margin-bottom: 20px;
+    margin-top: 0px;
   }
   .hero-content {
     max-width: 1300px;
     margin: 0 auto;
     text-align: left;
   }
+
   #right {
     position: absolute;
     top: -15px;
@@ -341,6 +337,7 @@ p {
     display: block;
   }
 }
+
 /**footer**/
 .section-footer {
   display: grid;
@@ -472,215 +469,54 @@ a {
     font-family: "Roboto";
   }
 }
-/*ORTDONCIA.HTML*/
 
-.youtube {
-  max-width: 100%;
-  padding: 20px 0;
-}
-.grid {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto, auto;
-  grid-template-areas:
-    "information"
-    "aside";
-  grid-gap: 2rem;
-  margin: 0 auto;
-}
-.information {
-  grid-area: information;
-  justify-content: center;
-  min-width: 20%;
-  text-align: left;
-  margin: 0 auto;
-  margin: 0 20px;
-}
-.information h3 {
+/*******************INSTALACIONES.HTML************************/
+.titleTra {
+  font-size: 36px;
   color: var(--color-blue);
+  font-weight: inherit;
+  margin: 0px 0px 20px 0px;
   text-align: left;
-  padding: 0;
-  margin: 0;
 }
-.information h2 {
+.text {
   text-align: left;
-  margin: 0;
-  font-size: 2em;
-  font-family: "Open Sans";
-  color: var(--color-green);
-  line-height: 1;
-  font-weight: bold;
-}
-.information p {
-  font-size: 1.05em;
   color: #5e6f7b;
-  line-height: 1.4;
-  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: inherit;
+  font-family: "Poppins";
 }
-ul,
-li {
-  font-family: "Open Sans";
-  color: #5e6f7b;
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
 }
-.information img {
-  width: 100%;
-  position: relative;
+.photos img {
+  min-width: 320px;
+  width: 500px;
+  margin: 5px;
+  display: flex;
 }
-.hyrax {
-  position: absolute;
-}
-.contein-swiper {
-  background-color: #41414144;
-  bottom: 0;
-  position: absolute;
-}
-.contein-swiper h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 10px;
-  font-weight: normal;
-  font-family: "roboto";
-}
-.contein-swiper p {
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  font-size: 1em;
-}
-.swiper-slide.hyrax {
-  background-image: url(../img/hyrax.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trans {
-  background-image: url(../img/barraTranspalatina.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.arco {
-  background-image: url(../img/arco.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.mascara {
-  background-image: url(../img/mascara.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.trampa {
-  background-image: url(../img/trampa.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.lingual {
-  background-image: url(../img/arco-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.hawley {
-  background-image: url(../img/hawley.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
-.swiper-slide.retenedor {
-  background-image: url(../img/retenedor-lingual.jpg);
-  background-position: center center;
-  background-size: cover;
-  position: relative;
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 auto;
 }
 .swiper-container {
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 40px 0;
-  z-index: 1;
-  width: 100%;
-  height: 30em;
-  max-width: 1200px;
+  max-width: 100%;
+  height: 600px;
 }
-.asideLeft {
-  display: block;
-  text-align: left;
-  grid-area: aside;
-  max-width: 300px;
-  min-width: 250px;
-  margin: 0 auto;
-}
-.asideLeft li {
-  color: var(--color-blue);
-  margin-left: 25px;
-}
-.asideLeft li a {
-  text-decoration: none;
-  color: #000;
-  line-height: 2;
-  transition: 0.3s;
-}
-.asideLeft li a:hover {
-  color: var(--color-blue);
-}
-.wrapperOrto {
-  height: 900px;
-}
-.title {
-  font-weight: 900;
-  line-height: 2;
-}
-.titleOr {
-  font-weight: 900;
-}
-.horarios {
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 20px;
-  text-align: center;
-}
-.ayuda {
-  background-color: var(--color-blue);
-  border-radius: 20px;
-  padding: 40px;
-  margin-top: 20px;
-  text-align: center;
-  color: #fff;
-}
-.buttonHelp {
-  padding: 11px 35px;
-  color: #fff;
-  background-color: #bfcc30;
-  text-decoration: none;
-  border-radius: 30px;
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 80%;
 }
 @media only screen and (min-width: 865px) {
-  .grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto, auto, auto;
-    grid-template-areas: "aside information";
-    grid-gap: 2rem;
-    margin: 0 auto;
-    width: 90vw;
-    box-sizing: border-box;
-  }
-  .asideLeft {
-    display: block;
-    text-align: left;
-    grid-area: aside;
-    max-width: 300px;
-    min-width: 250px;
+  .wrapper {
+    max-width: 80%;
   }
   .swiper-container {
-    height: 30em;
-    width: 30em;
-    float: left;
+    max-width: 70%;
+    height: 600px;
   }
 }
