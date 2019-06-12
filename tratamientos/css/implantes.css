@@ -152,6 +152,7 @@ p {
   }
 }
 /**menu escritorio**/
+
 @media only screen and (min-width: 865px) {
   .barra {
     width: 100%;
@@ -171,11 +172,14 @@ p {
   .barra.white nav a {
     color: #000;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .barra nav a {
     color: #fff;
   }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -219,7 +223,7 @@ p {
   }
   .menu a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 7px;
     text-decoration: none;
     font-family: "Roboto";
   }
@@ -229,7 +233,6 @@ p {
     display: none;
   }
 }
-
 /**hero movil **/
 /*
                           .nombre-sitio b {

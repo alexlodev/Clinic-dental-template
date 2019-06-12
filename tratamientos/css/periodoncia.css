@@ -152,6 +152,7 @@ p {
   }
 }
 /**menu escritorio**/
+
 @media only screen and (min-width: 865px) {
   .barra {
     width: 100%;
@@ -171,11 +172,14 @@ p {
   .barra.white nav a {
     color: #000;
   }
+  .barra.white nav a:hover {
+    color: var(--color-blue);
+  }
   .barra nav a {
     color: #fff;
   }
   .hover:hover {
-    color: #e9e9e9;
+    color: var(--color-green);
     transition: ease-in-out;
   }
   .barra nav a:last-child {
@@ -201,8 +205,8 @@ p {
   .barra.white nav a:last-child:hover {
     box-shadow: 0 0px 30px rgb(72, 154, 249);
     transform: scale(1.01);
-    color: #fff;
     transition: 0.5s;
+    color: #fff;
   }
   .navbar-logo {
     max-width: 200px;
