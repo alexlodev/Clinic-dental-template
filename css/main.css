@@ -309,7 +309,7 @@ p {
   transition: initial;
 }
 #Capa_1 {
-  bottom: -20px;
+  bottom: -30px;
   left: 0;
   right: 0;
   position: absolute;
@@ -719,6 +719,9 @@ p {
 }
 .img-appoint {
   width: 40em;
+}
+.img-appoint p{
+  font-weight: bold;
 }
 .img-appoint h2 {
   font-size: 20px;
