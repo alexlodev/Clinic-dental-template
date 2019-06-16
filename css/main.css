@@ -681,6 +681,7 @@ p {
   text-align: center;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  margin: 0px 20px;
   color: var(--color-blue);
   font-weight: bold;
 }
